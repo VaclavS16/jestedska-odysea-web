@@ -18,7 +18,8 @@
     "genre": "Black metal",
     "facebook": "https://www.facebook.com/navblackmetal/",
     "bandcamp": "https://navcult.bandcamp.com/music",
-    "pathPart": "nav"
+    "pathPart": "nav",
+    "genreCentered": true
   },
   {
     "name": "The Much Better",
@@ -39,7 +40,8 @@
     "genre": "Alternative rock",
     "facebook": "https://www.facebook.com/skyburnlbc/",
     "bandcamp": "https://skyburn.bandcamp.com/album/skyburn",
-    "pathPart": "skyburn"
+    "pathPart": "skyburn",
+    "genreCentered": true
   },
   {
     "name": "Frau Zwei",
@@ -49,15 +51,17 @@
     "pathPart": "frau-zwei"
   },
   {
+    "name": "Grayle",
+    "genre": "electro pop",
+    "facebook": "https://www.facebook.com/hgrayle",
+    "pathPart": "grayle",
+    "genreCentered": true
+  },
+  {
     "name": "DYZLEGTIC DIVISION DJS",
     "genre": "house breakbeat electronica",
     "facebook": "https://www.facebook.com/dyzlegticdivision",
     "pathPart": "dyzlegtic-division-djs"
-  },
-  {
-    "name": "Hedonix Sound system",
-    "genre": "psytrance",
-    "pathPart": "hedonix-sound-system"
   },
   {
     "name": "MONKEYBOOM CREW",
@@ -66,9 +70,35 @@
     "pathPart": "monkeyboom-crew"
   },
   {
+    "name": "Hedonix Sound system",
+    "genre": "psytrance",
+    "pathPart": "hedonix-sound-system"
+  },
+  {
+    "name": "31 Stitches",
+    "genre": "dj Hedonix",
+    "pathPart": "31-stitches",
+    "url": "https://soundcloud.com/31-stitches"
+  },
+  {
+    "name": "InfiX",
+    "genre": "dj Hedonix",
+    "pathPart": "infix",
+    "facebook": "https://soundcloud.com/infix-dj",
+    "genreCentered": true
+  },
+  {
+    "name": "Ja-Ne",
+    "genre": "Bassistaz crew",
+    "pathPart": "ja-ne",
+    "facebook": "https://bassistaz.com/portfolio/ja-ne/",
+    "genreCentered": true
+  },
+  {
     "name": "Raaja",
     "genre": "Live",
-    "pathPart": "raaja"
+    "pathPart": "raaja",
+    "url": "https://soundcloud.com/raaja"
   },
   {
     "name": "Nkyp",
@@ -79,17 +109,15 @@
   {
     "name": "Pavel Krejdl",
     "genre": "Techno",
-    "pathPart": "pavel-krejdl"
-  },
-  {
-    "name": "JA-NE",
-    "genre": "BASSISTAZ CREW",
-    "pathPart": "ja-ne"
+    "pathPart": "pavel-krejdl",
+    "url": "https://www.techno.cz/rozhovor/49862/elektrabel-pavel-krejdl-techno-fakt-zas-tak-casto-neslysis..."
   },
   {
     "name": "NEWTECK",
     "genre": "LUK-SI RECORDS",
-    "pathPart": "newteck"
+    "pathPart": "newteck",
+    "url": "https://soundcloud.com/newteck",
+    "genreCentered": true
   },
   {
     "name": "PIOTR SERAFIN + GUESTS",

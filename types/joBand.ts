@@ -6,4 +6,6 @@ export interface JoBand {
   pathPart?: string,
   facebook?: string,
   bandcamp?: string,
+  url?: string,
+  genreCentered?: boolean,
 }

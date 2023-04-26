@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     pageTransition: {name: 'page', mode: 'out-in'},
-    baseURL: "/jestedska-odysea-web/",
   },
   modules: [
     '@nuxt/image-edge',
