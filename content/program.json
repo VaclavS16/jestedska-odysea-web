@@ -58,6 +58,12 @@
     "genreCentered": true
   },
   {
+    "name": "Divo Institute",
+    "genre": "blues",
+    "facebook": "https://divoinstitute.bandcamp.com/album/divo-institute",
+    "pathPart": "divo-institute"
+  },
+  {
     "name": "DYZLEGTIC DIVISION DJS",
     "genre": "house breakbeat electronica",
     "facebook": "https://www.facebook.com/dyzlegticdivision",
