@@ -4,14 +4,18 @@
     "genre": "Alternative rock",
     "facebook": "https://www.facebook.com/weareriverhouse",
     "bandcamp": "https://riverhouse.bandcamp.com/",
-    "pathPart": "river-house"
+    "pathPart": "river-house",
+    "stage": "bands",
+    "start": "2023-06-03T21:00"
   },
   {
     "name": "Podještědský Okultista",
     "genre": "Rap",
     "facebook": "https://www.facebook.com/podjestedskyokultista/",
     "bandcamp": "https://podjestedskyokultista.bandcamp.com/album/dvacet-deka-n-hy-ep",
-    "pathPart": "podjestedsky-okultista"
+    "pathPart": "podjestedsky-okultista",
+    "stage": "bands",
+    "start": "2023-06-03T20:00"
   },
   {
     "name": "NĀV",
@@ -19,21 +23,27 @@
     "facebook": "https://www.facebook.com/navblackmetal/",
     "bandcamp": "https://navcult.bandcamp.com/music",
     "pathPart": "nav",
-    "genreCentered": true
+    "genreCentered": true,
+    "stage": "bands",
+    "start": "2023-06-03T23:00"
   },
   {
     "name": "The Much Better",
     "genre": "Emo hardcore screamo",
     "facebook": "https://www.facebook.com/profile.php?id=100083007540924",
     "bandcamp": "https://themuchbetter.bandcamp.com/album/burn-church-fun-night",
-    "pathPart": "the-much-better"
+    "pathPart": "the-much-better",
+    "stage": "bands",
+    "start": "2023-06-03T18:00"
   },
   {
     "name": "Rutka Laskier",
     "genre": "Post hardcore",
     "facebook": "https://www.facebook.com/rutkalaskierband/",
     "bandcamp": "https://rutkalaskier.bandcamp.com/album/protiklady",
-    "pathPart": "rutka-laskier"
+    "pathPart": "rutka-laskier",
+    "stage": "bands",
+    "start": "2023-06-03T22:00"
   },
   {
     "name": "Skyburn",
@@ -41,89 +51,194 @@
     "facebook": "https://www.facebook.com/skyburnlbc/",
     "bandcamp": "https://skyburn.bandcamp.com/album/skyburn",
     "pathPart": "skyburn",
-    "genreCentered": true
+    "genreCentered": true,
+    "stage": "bands",
+    "start": "2023-06-03T19:00"
   },
   {
     "name": "Frau Zwei",
+
     "genre": "Technopunk",
     "facebook": "https://www.facebook.com/FrauZwei/",
     "bandcamp": "https://frauzwei.bandcamp.com/",
-    "pathPart": "frau-zwei"
+    "pathPart": "frau-zwei",
+    "stage": "bands",
+    "start": "2023-06-04T01:00"
   },
   {
     "name": "Grayle",
     "genre": "electro pop",
     "facebook": "https://www.facebook.com/hgrayle",
     "pathPart": "grayle",
-    "genreCentered": true
+    "genreCentered": true,
+    "stage": "bands",
+    "start": "2023-06-03T17:00"
   },
   {
     "name": "Divo Institute",
-    "genre": "blues",
+    "genre": "Blues",
     "facebook": "https://divoinstitute.bandcamp.com/album/divo-institute",
-    "pathPart": "divo-institute"
+    "pathPart": "divo-institute",
+    "stage": "bands",
+    "start": "2023-06-04T00:00"
   },
   {
     "name": "DYZLEGTIC DIVISION DJS",
     "genre": "house breakbeat electronica",
     "facebook": "https://www.facebook.com/dyzlegticdivision",
-    "pathPart": "dyzlegtic-division-djs"
+    "pathPart": "dyzlegtic-division-djs",
+    "stage": "division",
+    "start": "2023-06-03T14:00"
   },
   {
-    "name": "MONKEYBOOM CREW",
+    "name": "Afternoon Warm up",
     "genre": "DnB Jungle",
     "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew"
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-03T14:00"
   },
   {
-    "name": "Hedonix Sound system",
+    "name": "Voice K",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-03T20:00"
+  },
+  {
+    "name": "Skuban",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-03T21:00"
+  },
+  {
+    "name": "Erbo",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-03T22:00"
+  },
+  {
+    "name": "NelliQ & Dickoro",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-03T23:00"
+  },
+  {
+    "name": "Bicman & Stand-up",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-04T00:00"
+  },
+  {
+    "name": "Vitto & Dr.Dreadly",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-04T01:00"
+  },
+  {
+    "name": "???",
+    "genre": "DnB Jungle",
+    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
+    "pathPart": "monkeyboom-crew",
+    "stage": "monkey",
+    "start": "2023-06-04T02:00"
+  },
+  {
+    "name": "Jungle Riders",
+    "genre": "Jungle",
+    "facebook": "https://soundcloud.com/jungleriders?fbclid=IwAR2TPMHeYimIlh-BZTW_vX-lKoCGLXPU1f0VWn2bFba-g2HJan0PmMGCQIY",
+    "pathPart": "jungle-riders",
+    "stage": "monkey",
+    "start": "2023-06-03T17:30"
+  },
+  {
+    "name": "Illuminatrix",
+    "genre": "DnB",
+    "facebook": "https://linktr.ee/illuminatrix?fbclid=IwAR1ucjeGTofYNlfpVJbtKdJ-uWLb4aF-kva1pD1XAW1BnkCGEwEH3ew43q4",
+    "pathPart": "illuminatrix",
+    "stage": "monkey",
+    "start": "2023-06-03T19:00"
+  },
+  {
+    "name": "Hedomix",
     "genre": "psytrance",
-    "pathPart": "hedonix-sound-system"
+    "pathPart": "hedonix-sound-system",
+    "stage": "hedonix",
+    "start": "2023-06-03T12:00"
   },
   {
-    "name": "31 Stitches",
-    "genre": "dj Hedonix",
-    "pathPart": "31-stitches",
-    "url": "https://soundcloud.com/31-stitches"
+    "name": "MRTy",
+    "genre": "psytrance",
+    "pathPart": "hedonix-sound-system",
+    "stage": "hedonix",
+    "start": "2023-06-03T14:00"
   },
   {
-    "name": "InfiX",
-    "genre": "dj Hedonix",
-    "pathPart": "infix",
-    "facebook": "https://soundcloud.com/infix-dj",
-    "genreCentered": true
+    "name": "Psyrix",
+    "genre": "psytrance",
+    "pathPart": "hedonix-sound-system",
+    "stage": "hedonix",
+    "start": "2023-06-03T22:00"
+  },
+  {
+    "name": "Totentanz",
+    "genre": "",
+    "pathPart": "hedonix-sound-system",
+    "stage": "hedonix",
+    "start": "2023-06-04T04:00"
   },
   {
     "name": "Ja-Ne",
     "genre": "Bassistaz crew",
     "pathPart": "ja-ne",
     "facebook": "https://bassistaz.com/portfolio/ja-ne/",
-    "genreCentered": true
+    "genreCentered": true,
+    "stage": "hedonix",
+    "start": "2023-06-03T16:00"
   },
   {
     "name": "Raaja",
     "genre": "Live",
     "pathPart": "raaja",
-    "url": "https://soundcloud.com/raaja"
+    "url": "https://soundcloud.com/raaja",
+    "stage": "hedonix",
+    "start": "2023-06-03T18:00"
   },
   {
     "name": "Nkyp",
     "genre": "Techno",
     "facebook": "https://www.facebook.com/profile.php?id=100063544691569",
-    "pathPart": "nkyp"
+    "pathPart": "nkyp",
+    "stage": "hedonix",
+    "start": "2023-06-04T02:00"
   },
   {
     "name": "Pavel Krejdl",
     "genre": "Techno",
     "pathPart": "pavel-krejdl",
-    "url": "https://www.techno.cz/rozhovor/49862/elektrabel-pavel-krejdl-techno-fakt-zas-tak-casto-neslysis..."
+    "url": "https://www.techno.cz/rozhovor/49862/elektrabel-pavel-krejdl-techno-fakt-zas-tak-casto-neslysis...",
+    "stage": "hedonix",
+    "start": "2023-06-04T00:00"
   },
   {
     "name": "NEWTECK",
     "genre": "LUK-SI RECORDS",
     "pathPart": "newteck",
     "url": "https://soundcloud.com/newteck",
-    "genreCentered": true
+    "genreCentered": true,
+    "stage": "hedonix",
+    "start": "2023-06-03T20:00"
   },
   {
     "name": "PIOTR SERAFIN + GUESTS",

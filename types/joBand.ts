@@ -8,4 +8,6 @@ export interface JoBand {
   bandcamp?: string,
   url?: string,
   genreCentered?: boolean,
+  stage?: string,
+  start?: string,
 }

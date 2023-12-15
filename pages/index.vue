@@ -1,6 +1,6 @@
 <template>
-  <JoProgram :active-band-name="activeBandName"/>
-  <JoPresale class="mt-5"></JoPresale>
+<!--  <JoLineup />-->
+  <JoNews></JoNews>
 </template>
 
 <script setup>

@@ -5,7 +5,7 @@
           v-for="item in navItems"
           :key="item.title"
           class="jo-nav__item"
-          :class="{'jo-nav__item--active': currentPath === item.path}"
+          :class="{'jo-nav__item--active': currentPath === item.path || (currentPath?.includes('program') && item.path === '/') }"
           @click="navChange"
       >
         <nuxt-link :to="item.path" class="px-2 py-1">

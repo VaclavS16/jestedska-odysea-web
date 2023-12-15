@@ -1,7 +1,7 @@
 <template>
-  <div id="JoText" class="gradient-border">
+  <div id="JoText">
     {{ renderedText }}
-    <span class="jo-cursor inline-block w-1 h-4 bg-white"></span>
+<!--     <span class="jo-cursor inline-block w-1 h-4 bg-white"></span>-->
 
     <p ref="fullText" class="hidden">
       <slot></slot>
@@ -32,8 +32,9 @@ onMounted(() => {
 <style scoped>
 .jo-cursor {
   margin-bottom: -2px;
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+
+  //animation-name: blink;
+  //animation-duration: 1s;
+  //animation-iteration-count: infinite;
 }
 </style>

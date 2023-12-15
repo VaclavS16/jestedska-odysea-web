@@ -5,7 +5,7 @@
         <JoLogo class="absolute w-48 top-0 left-2 sm:left-auto xl:left-0 xl:w-96 z-30 mt-4 xl:mt-10 xl:ml-10"></JoLogo>
       </nuxt-link>
       <div
-          class="jo-content mt-40 mb-auto xl:mt-40  w-11/12 sm:w-3/4 lg:w-1/2 z-20"
+        class="jo-content mt-40 mb-auto xl:mt-40  w-11/12 sm:w-3/4 lg:w-1/2 z-40"
       >
         <!--        <JoNav></JoNav>-->
         <nuxt-page></nuxt-page>
@@ -19,7 +19,7 @@
 <style>
 body {
   background-size: cover;
-  background-image: url("~/static/images/back_min.webp");
+  background-image: url("~/static/images/back_min_v2.webp");
 }
 </style>
 
