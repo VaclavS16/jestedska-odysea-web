@@ -3,7 +3,7 @@
     <div class="jo-footer__buttons">
       <IconButton class="mr-4" icon-name="facebook" link="https://www.facebook.com/JestedskaOdysea"></IconButton>
       <IconButton class="mr-4" icon-name="instagram" link="https://www.instagram.com/jestedska_odysea/"></IconButton>
-      <IconButton icon-name="location" link="https://goo.gl/maps/tXxggo9w2XUE1H94A"></IconButton>
+      <IconButton icon-name="location" alt="Mapa" link="https://goo.gl/maps/tXxggo9w2XUE1H94A"></IconButton>
     </div>
   </div>
 </template>

@@ -1,15 +1,17 @@
 <template>
   <div class="jo-news-item__wrapper">
-    <a :href="props.item.link" target="_blank" class="jo-news-item__link">
+    <a :href="props.item.link" :aria-label="`Jdi na facebook událost pro ${props.item.title}`" target="_blank"
+       class="jo-news-item__link">
       <div class="overflow-hidden">
-        <nuxt-img :src="props.item.image" class="jo-news-item__image" />
+        <nuxt-img :src="props.item.image" :alt="props.item.title" class="jo-news-item__image" />
       </div>
       <h2 class="jo-news-item__title">{{ props.item.title }}</h2>
     </a>
     <JoText class="jo-news-item__text">{{ props.item.description }}</JoText>
     <div class="jo-news-item__bottom">
       <p class="jo-news-item__date">{{ formatedDate }}</p>
-      <a :href="props.item.locationUrl" target="_blank" class="jo-news-item__location">{{ props.item.location }}</a>
+      <a :href="props.item.locationUrl" :aria-label="`Kde se nachází: ${props.item.title}`" target="_blank"
+         class="jo-news-item__location">{{ props.item.location }}</a>
     </div>
   </div>
 </template>
@@ -41,7 +43,7 @@ const formatedDate = computed(() => {
   }
 
   &__text {
-    @apply text-sm text-white;
+    @apply text-sm text-neutral-300;
   }
 
   &__bottom {

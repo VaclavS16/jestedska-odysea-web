@@ -14,10 +14,11 @@
     </div>
     <div class="jo-event--box h-12 sm:h-14 xl:h-16">
       <IconButton
-          class="border-none bg-slate-900 rounded-none xl:p-4 h-full"
-          icon-name="event"
-          link="https://www.facebook.com/events/2022704964728696"
-          title="Facebook událost">
+        class="border-none bg-neutral-900 rounded-none xl:p-4 h-full"
+        icon-name="event"
+        alt="Facebook událost"
+        link="https://www.facebook.com/events/2022704964728696"
+        title="Facebook událost">
       </IconButton>
     </div>
   </div>
@@ -37,11 +38,11 @@
 }
 
 .jo-event--head {
-  @apply hidden lg:block border-slate-900 w-full text-center border-solid border-2 text-slate-300 text-xs xl:text-joyellow bg-slate-transparent;
+  @apply hidden lg:block border-neutral-900 w-full text-center border-solid border-2 text-neutral-300 text-xs xl:text-joyellow bg-neutral-950;
 }
 
 .jo-event--content {
-  @apply py-3 lg:px-4 first-of-type:pl-3 text-joyellow text-base sm:text-xl font-bold lg:text-2xl xl:text-4xl bg-slate-900 text-center
+  @apply py-3 lg:px-4 first-of-type:pl-3 text-joyellow text-base sm:text-xl font-bold lg:text-2xl xl:text-4xl bg-neutral-900 text-center
 }
 
 </style>

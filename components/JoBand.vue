@@ -1,6 +1,6 @@
 <template>
   <div v-if="activeBand" class="flex flex-row mt-8 gap-y-2">
-    <nuxt-img ref="bandImageRef" :src="activeBand.imgPath" class="hidden" />
+    <nuxt-img ref="bandImageRef" :alt="props.activeBandName || ''" :src="activeBand.imgPath" class="hidden" />
     <span :style="{ backgroundImage: `url(${bandImageSrc})` }" class="jo-band__image"></span>
     <JoText class="w-full">{{ activeBand.desc }}</JoText>
   </div>

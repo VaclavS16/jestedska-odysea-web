@@ -1,5 +1,5 @@
 <template>
-  <nuxt-img class="jo-logo" src="/logo.svg" />
+  <nuxt-img class="jo-logo" alt="Ještědská Odysea logo" src="/logo.svg" />
 </template>
 
 <style scoped>

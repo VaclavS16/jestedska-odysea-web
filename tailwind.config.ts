@@ -1,4 +1,4 @@
-import {Config} from 'tailwindcss'
+import { Config } from 'tailwindcss'
 
 const colors = require('tailwindcss/colors')
 
@@ -7,17 +7,11 @@ export default <Config>{
     extend: {
       minWidth: {
         '52': '13rem',
-      }
-    },
-    colors: {
-      'joyellow': "#FADD00",
-      'green': colors.green,
-      'white': colors.white,
-      'black': colors.black,
-      'slate': colors.slate,
-      'slate-transparent': 'rgba(15, 23, 42, 0.9)',
-      'cyan': colors.cyan,
-      'emerald': colors.emerald,
+      },
+      colors: {
+        'joyellow': "#FADD00",
+        'slate-transparent': 'rgba(15, 23, 42, 0.9)',
+      },
     },
   },
   content: [
