@@ -4,7 +4,7 @@
 
 <script setup>
 definePageMeta({
-  layout: "default"
+  layout: "default",
 });
 
 useHead({
@@ -14,8 +14,11 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Ještědská odysea je multižánrový hudební a kulturní festival, jenž se koná v Liberci."
-    }
-  ]
+      content: "Ještědská odysea je multižánrový hudební a kulturní festival, jenž se koná v Liberci.",
+    },
+  ],
+  htmlAttrs: {
+    lang: "cs",
+  },
 });
 </script>
