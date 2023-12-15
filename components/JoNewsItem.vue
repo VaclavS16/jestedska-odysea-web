@@ -3,7 +3,7 @@
     <a :href="props.item.link" :aria-label="`Jdi na facebook událost pro ${props.item.title}`" target="_blank"
        class="jo-news-item__link">
       <div class="overflow-hidden">
-        <nuxt-img :src="props.item.image" :alt="props.item.title" class="jo-news-item__image" />
+        <nuxt-img :src="props.item.image" alt="Cover image pro zprávu" class="jo-news-item__image" />
       </div>
       <h2 class="jo-news-item__title">{{ props.item.title }}</h2>
     </a>
