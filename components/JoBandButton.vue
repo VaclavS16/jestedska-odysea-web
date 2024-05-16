@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import { JoBand } from "~/types/joBand";
+import type { JoBand } from "~/types/joBand";
 
 const props = defineProps<{
   band: JoBand,

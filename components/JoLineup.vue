@@ -7,7 +7,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { JoBand } from "~/types/joBand";
+import type { JoBand } from "~/types/joBand";
 import program from "../content/program.json";
 
 const props = defineProps<{

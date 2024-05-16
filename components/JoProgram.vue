@@ -5,7 +5,7 @@
 </template>
 <script lang="ts" setup>
 import JoBandButton from "./JoBandButton.vue";
-import { JoBand } from "~/types/joBand";
+import type { JoBand } from "~/types/joBand";
 import program from "../content/program.json";
 
 const props = defineProps<{
