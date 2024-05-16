@@ -1,13 +1,13 @@
 <template>
   <component
-      :is="wrapperComponent"
-      v-bind="wrapperComponentAttributes"
+    :is="wrapperComponent"
+    v-bind="wrapperComponentAttributes"
   >
     <div class="jo-band-name">
       {{ props.band.name }}
       <span
-          class="jo-band-genre"
-          :class="{ 'genre-centered': props.band.genreCentered }"
+        class="jo-band-genre"
+        :class="{ 'genre-centered': props.band.genreCentered }"
       >
         {{ props.band.genre }}
       </span>
@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import {JoBand} from "~/types/joBand";
+import { JoBand } from "~/types/joBand";
 
 const props = defineProps<{
   band: JoBand,
@@ -35,17 +35,17 @@ const wrapperComponentAttributes = computed(() => {
     href: props.band.bandcamp || props.band.url || props.band.facebook,
     target: "_blank",
     class: "jo-band-button jo-band-button--hover"
-  } : {class: "jo-band-button"};
+  } : { class: "jo-band-button" };
 });
 </script>
 
 <style scoped lang="scss">
 .jo-band-button {
-  @apply bg-slate-800 py-1 px-4 border-solid border-4 border-joyellow text-joyellow font-bold relative -skew-x-6
+  @apply bg-slate-800 py-1 px-4 border-solid border-4 border-joprimary text-joprimary font-bold relative -skew-x-6
 }
 
 .jo-band-button--hover {
-  @apply hover:bg-joyellow hover:text-slate-800 hover:border-slate-800
+  @apply hover:bg-joprimary hover:text-slate-800 hover:border-slate-800
 }
 
 .jo-band-name {
@@ -53,7 +53,7 @@ const wrapperComponentAttributes = computed(() => {
 }
 
 .jo-band-genre {
-  @apply absolute px-1 bg-slate-800 whitespace-nowrap text-xs -bottom-3 -right-1 rounded-xl text-joyellow;
+  @apply absolute px-1 bg-slate-800 whitespace-nowrap text-xs -bottom-3 -right-1 rounded-xl text-joprimary;
 
   &.genre-centered {
     right: 50%;

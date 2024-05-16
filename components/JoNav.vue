@@ -2,11 +2,11 @@
   <nav class="jo-nav">
     <ul class="flex flex-row justify-center">
       <li
-          v-for="item in navItems"
-          :key="item.title"
-          class="jo-nav__item"
-          :class="{'jo-nav__item--active': currentPath === item.path || (currentPath?.includes('program') && item.path === '/') }"
-          @click="navChange"
+        v-for="item in navItems"
+        :key="item.title"
+        class="jo-nav__item"
+        :class="{'jo-nav__item--active': currentPath === item.path || (currentPath?.includes('program') && item.path === '/') }"
+        @click="navChange"
       >
         <nuxt-link :to="item.path" class="px-2 py-1">
           {{ item.title }}
@@ -39,9 +39,9 @@ watch(route, (to) => {
   @apply mb-0.5 ml-auto w-fit;
 
   &__item {
-    @apply bg-slate-transparent text-slate-300 text-center text-joyellow font-semibold uppercase tracking-widest;
+    @apply bg-slate-transparent text-slate-300 text-center text-joprimary font-semibold uppercase tracking-widest;
     @apply hover:text-slate-transparent;
-    @apply hover:bg-joyellow;
+    @apply hover:bg-joprimary;
     @apply hover:cursor-pointer;
     @apply flex items-center justify-center;
     -moz-transform: skew(-15deg, 0deg);
@@ -51,7 +51,7 @@ watch(route, (to) => {
     transform: skew(-15deg, 0deg);
 
     &--active {
-      @apply bg-joyellow;
+      @apply bg-joprimary;
       @apply text-slate-transparent;
     }
   }

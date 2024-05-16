@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    <h2 class="p-2 text-xl text-joyellow font-semibold uppercase bg-slate-900 hover:bg-joyellow hover:text-slate-900 cursor-pointer" @click="toogleShow">
+    <h2
+      class="p-2 text-xl text-joprimary font-semibold uppercase bg-slate-900 hover:bg-joprimary hover:text-slate-900 cursor-pointer"
+      @click="toogleShow">
       <span v-if="!show">&#9660;</span>
       <span v-if="show">&#9650;</span>
       {{ props.name }}
@@ -8,16 +10,16 @@
 
     <table v-if="show" class="table-fixed bg-slate-transparent w-full text-base">
       <tbody>
-        <tr v-for="(band, index) in sortedBands" :key="index" class="text-white">
-          <td class="p-1 w-16 text-sm">{{ band.start }}</td>
-          <td class="p-1 text-joyellow">{{ band.name }}</td>
-          <td class="p-1 text-sm">{{ band.genre }}</td>
-        </tr>
+      <tr v-for="(band, index) in sortedBands" :key="index" class="text-white">
+        <td class="p-1 w-16 text-sm">{{ band.start }}</td>
+        <td class="p-1 text-joprimary">{{ band.name }}</td>
+        <td class="p-1 text-sm">{{ band.genre }}</td>
+      </tr>
       </tbody>
     </table>
   </div>
 
-  
+
 </template>
 <script lang="ts" setup>
 import { JoBand } from "~/types/joBand";

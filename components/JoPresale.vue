@@ -2,17 +2,11 @@
   <a
     aria-label="Předprodej"
     href="https://www.book-tickets.cz/index.php?page=bookticket&event=99"
-    class="group bg-slate-transparent gradient-border p-6 flex flex-row hover:bg-joyellow"
+    class="group bg-slate-transparent gradient-border p-6 flex flex-row hover:bg-joprimary"
   >
-    <nuxt-img
-      src="/icons/ticket.svg"
+    <TicketIcon
       alt="Předprodej"
-      class="w-5 sm:w-7 m-auto group-hover:hidden"
-    />
-    <nuxt-img
-      src="/icons/ticket_dark.svg"
-      alt="Předprodej"
-      class="w-5 sm:w-7 m-auto hidden group-hover:block"
+      class="w-5 sm:w-7 m-auto group-hover:hidden fill-joprimary group-hover:fill-black"
     />
 
     <JoText class="w-full ml-5 group-hover:text-black text-slate-300">
@@ -20,3 +14,6 @@
     </JoText>
   </a>
 </template>
+<script setup lang="ts">
+import TicketIcon from "~/components/svg/TicketIcon.vue";
+</script>

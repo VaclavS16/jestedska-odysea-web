@@ -9,7 +9,7 @@ export default <Config>{
         '52': '13rem',
       },
       colors: {
-        'joyellow': "#FADD00",
+        'joprimary': "#D781BE",
         'slate-transparent': 'rgba(15, 23, 42, 0.9)',
       },
     },

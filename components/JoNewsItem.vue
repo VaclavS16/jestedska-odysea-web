@@ -3,7 +3,12 @@
     <a :href="props.item.link" :aria-label="`Jdi na facebook událost pro ${props.item.title}`" target="_blank"
        class="jo-news-item__link">
       <div class="overflow-hidden">
-        <nuxt-img :src="props.item.image" alt="Cover image pro zprávu" class="jo-news-item__image" />
+        <nuxt-img
+          :src="props.item.image"
+          alt="Cover image pro zprávu"
+          class="jo-news-item__image"
+          :class="imagePositionClass"
+        />
       </div>
       <h2 class="jo-news-item__title">{{ props.item.title }}</h2>
     </a>
@@ -17,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { JoNewsItem } from "~/types/joNews";
+import type { JoNewsItem } from "~/types/joNews";
 
 const props = defineProps<{
   item: JoNewsItem,
@@ -28,6 +33,9 @@ const formatedDate = computed(() => {
   return `${date.getDate()}|${date.getMonth() + 1}|${date.getFullYear()}`;
 });
 
+const imagePositionClass = computed(() => {
+  return props.item.imagePosition ? `jo-news-item__image--${props.item.imagePosition}` : "jo-news-item__image--center";
+});
 </script>
 
 <style scoped lang="scss">
@@ -38,7 +46,7 @@ const formatedDate = computed(() => {
   }
 
   &__title {
-    @apply absolute text-2xl font-bold text-joyellow bottom-0 left-0 px-2;
+    @apply absolute text-2xl font-bold text-joprimary bottom-0 left-0 px-2;
     background-color: rgba(0, 0, 0, 0.9);
   }
 
@@ -51,16 +59,36 @@ const formatedDate = computed(() => {
   }
 
   &__date {
-    @apply text-base font-bold bg-joyellow px-1 mr-2;
+    @apply text-base font-bold bg-joprimary px-1 mr-2;
   }
 
   &__location {
-    @apply text-base font-bold bg-joyellow px-1 hover:bg-black hover:text-joyellow;
+    @apply text-base font-bold bg-joprimary px-1 hover:bg-black hover:text-joprimary;
   }
 
   &__image {
     @apply w-full h-48 object-cover rounded-md;
     animation: zoomInOut 5s infinite; /* 10s is the duration of one cycle */
+
+    &--center {
+      @apply object-center;
+    }
+
+    &--top {
+      @apply object-top;
+    }
+
+    &--bottom {
+      @apply object-bottom;
+    }
+
+    &--left {
+      @apply object-left;
+    }
+
+    &--right {
+      @apply object-right;
+    }
   }
 
   &__link {
@@ -68,6 +96,11 @@ const formatedDate = computed(() => {
   }
 }
 
+.jo-news-item__wrapper:only-child {
+  .jo-news-item__image {
+    height: calc(100vh - 20rem);
+  }
+}
 @keyframes zoomInOut {
   0%, 100% {
     transform: scale(1); /* Normal size */
