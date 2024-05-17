@@ -1,5 +1,5 @@
 <template>
-  <JoNewsItem v-for="item of joNews" :item="item" :key="item.title" class="mb-4"/>
+  <JoNewsItem v-for="item of joNews" :item="item" :key="item.title" class="mb-4" />
 </template>
 
 <script setup lang="ts">

@@ -1,19 +1,29 @@
 <template>
   <div class="jo-news-item__wrapper">
-    <a :href="props.item.link" :aria-label="`Jdi na facebook událost pro ${props.item.title}`" target="_blank"
-       class="jo-news-item__link">
-      <div class="overflow-hidden">
+    <a
+      :href="props.item.link"
+      :aria-label="`Jdi na facebook událost pro ${props.item.title}`"
+      target="_blank"
+      class="group"
+    >
+      <div class="overflow-hidden relative">
         <nuxt-img
+          v-if="props.item.image"
           :src="props.item.image"
           alt="Cover image pro zprávu"
-          class="jo-news-item__image"
+          class="jo-news-item__image group-hover:brightness-125"
           :class="imagePositionClass"
         />
+        <h2 class="jo-news-item__title" :class="{'absolute': !!props.item.image}">{{ props.item.title }}</h2>
       </div>
-      <h2 class="jo-news-item__title">{{ props.item.title }}</h2>
+
+      <div class="flex flex-row">
+        <Icon v-if="props.item.icon" :icon-name="props.item.icon"
+              class="group-hover:bg-joprimary group-hover:fill-black" />
+        <JoText class="jo-news-item__text" :class="{'pl-4': props.item.icon}">{{ props.item.description }}</JoText>
+      </div>
     </a>
-    <JoText class="jo-news-item__text">{{ props.item.description }}</JoText>
-    <div class="jo-news-item__bottom">
+    <div v-if="props.item.date || props.item.locationUrl || props.item.location" class="jo-news-item__bottom">
       <p class="jo-news-item__date">{{ formatedDate }}</p>
       <a :href="props.item.locationUrl" :aria-label="`Kde se nachází: ${props.item.title}`" target="_blank"
          class="jo-news-item__location">{{ props.item.location }}</a>
@@ -46,12 +56,12 @@ const imagePositionClass = computed(() => {
   }
 
   &__title {
-    @apply absolute text-2xl font-bold text-joprimary bottom-0 left-0 px-2;
+    @apply text-2xl font-bold text-joprimary bottom-0 left-0 px-2 group-hover:text-black group-hover:bg-joprimary;
     background-color: rgba(0, 0, 0, 0.9);
   }
 
   &__text {
-    @apply text-sm text-neutral-300;
+    @apply text-sm text-neutral-300 group-hover:bg-joprimary group-hover:text-black;
   }
 
   &__bottom {
@@ -89,10 +99,6 @@ const imagePositionClass = computed(() => {
     &--right {
       @apply object-right;
     }
-  }
-
-  &__link {
-    @apply relative hover:opacity-60;
   }
 }
 

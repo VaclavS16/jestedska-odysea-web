@@ -8,5 +8,11 @@
     "image": "/news/2024-06-01.webp",
     "imagePosition": "top",
     "link": "https://www.facebook.com/events/2022704964728696"
+  },
+  {
+    "title": "Předprodej vstupenek",
+    "description": "Předprodej zahájen. Kupte si vstupenku dopředu, ušetříte nějakou tu korunu na drinky a čas při příchodu na akci!",
+    "link": "https://www.book-tickets.cz/?page=bookticket&event=126&fbclid=IwZXh0bgNhZW0CMTAAAR1Gp_V6fFJMkzfH8Rs7o-mIjjNpKYBRzz-hrBd4j7M_PN6QdTKtCLmcVI4_aem_AdKHEQDXxnfpO9Ej1j_v3abCAOfWneLMuC-efHnh832eUJcFWXG3_CmzeaxhAnnB5Q7VQ-JjU05yM9fLcqk-lifp",
+    "icon": "ticket"
   }
 ]

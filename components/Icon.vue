@@ -1,13 +1,9 @@
 <template>
-  <a
+  <component
     v-if="iconComponent"
-    :aria-label="`${props.alt || props.iconName} Ještědské Odysey`"
-    :href="props.link"
-    class="jo-button--icon rounded-full p-2 sm:p5 inline-flex  border-solid border-2 border-joprimary hover:bg-joprimary group"
-    target="_blank"
-  >
-    <Icon :icon-name="props.iconName" class="m-auto group-hover:fill-black" />
-  </a>
+    :is="iconComponent"
+    class="w-5 sm:w-7 shrink-0 fill-joprimary"
+  />
 </template>
 
 <script lang="ts" setup>
@@ -15,9 +11,6 @@ import type { ComponentOptionsMixin, DefineComponent, PublicProps } from "@vue/r
 
 const props = defineProps<{
   iconName: string,
-  link: string,
-  alt?: string,
-  border?: boolean
 }>();
 
 const EventIcon = defineAsyncComponent(() => import("~/components/svg/EventIcon.vue"));
@@ -39,9 +32,3 @@ const iconComponent = computed(() => {
   return componentsMap[props.iconName];
 });
 </script>
-
-<style scoped>
-.jo-button--icon:hover {
-  animation: pulse-border 1s infinite;
-}
-</style>
