@@ -1,10 +1,10 @@
 [
   {
-    "title": "LineUp",
+    "title": "Info",
     "path": "/"
   },
   {
-    "title": "Info",
-    "path": "/info"
+    "title": "LineUp",
+    "path": "/program"
   }
 ]

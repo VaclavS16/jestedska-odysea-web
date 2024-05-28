@@ -1,6 +1,7 @@
 <template>
-  <!--  <JoLineup />-->
-  <JoNews></JoNews>
+  <div>
+    <JoNews></JoNews>
+  </div>
 </template>
 
 <script setup>

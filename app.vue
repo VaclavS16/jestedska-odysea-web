@@ -9,7 +9,7 @@
       <div
         class="jo-content mt-40 mb-20 xl:mt-40  w-11/12 sm:w-3/4 lg:w-1/2 z-40"
       >
-        <!--        <JoNav></JoNav>-->
+        <JoNav></JoNav>
         <nuxt-page></nuxt-page>
       </div>
       <JoEvent class="mt-0 absolute right-0 lg:right-20 top-10"></JoEvent>

@@ -5,8 +5,7 @@
         v-for="item in navItems"
         :key="item.title"
         class="jo-nav__item"
-        :class="{'jo-nav__item--active': currentPath === item.path || (currentPath?.includes('program') && item.path === '/') }"
-        @click="navChange"
+        :class="{'jo-nav__item--active': currentPath === item.path }"
       >
         <nuxt-link :to="item.path" class="px-2 py-1">
           {{ item.title }}
@@ -21,16 +20,10 @@ import navItemsJson from "~/content/navigation.json";
 
 const navItems = ref(navItemsJson);
 
-const currentPath = ref(null);
-
 const route = useRoute();
 
-onMounted(() => {
-  currentPath.value = window.location.pathname;
-});
-
-watch(route, (to) => {
-  currentPath.value = to.path;
+const currentPath = computed(() => {
+  return route.path;
 });
 </script>
 
