@@ -2,6 +2,7 @@
   <div class="flex flex-col gap-4 pb-16">
     <JoStage name="Bands" :interpreters="stages.bands" />
     <JoStage name="Dizlectic division" :interpreters="stages.division" />
+    <JoStage name="Mozkocuc" :interpreters="stages.mzc" />
     <JoStage name="Monkey Boom" :interpreters="stages.monkey" />
     <JoStage name="Hedonix" :interpreters="stages.hedonix" />
   </div>
@@ -22,6 +23,7 @@ const stages = computed(() => {
     division: bands.value.filter(band => band.stage === "division"),
     monkey: bands.value.filter(band => band.stage === "monkey"),
     hedonix: bands.value.filter(band => band.stage === "hedonix"),
+    mzc: bands.value.filter(band => band.stage === "mzc"),
   }
 });
 </script>

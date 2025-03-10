@@ -1,248 +1,249 @@
 [
   {
-    "name": "River | House",
-    "genre": "Alternative rock",
-    "facebook": "https://www.facebook.com/weareriverhouse",
-    "bandcamp": "https://riverhouse.bandcamp.com/",
-    "pathPart": "river-house",
+    "name": "Inner Child",
+    "genre": "Indie rock",
+    "facebook": "https://www.facebook.com/profile.php?id=100086840624711",
     "stage": "bands",
-    "start": "2023-06-03T21:00"
+    "start": "2024-06-01T18:00"
   },
   {
-    "name": "Podještědský Okultista",
+    "name": "Scalp",
+    "genre": "Hardcore punk",
+    "facebook": "https://www.facebook.com/scalpband/",
+    "bandcamp": "https://scalpband.bandcamp.com/album/emoce",
+    "stage": "bands",
+    "start": "2024-06-01T19:00"
+  },
+  {
+    "name": "Levag",
+    "genre": "Hardcore punk",
+    "bandcamp": "https://levag.bandcamp.com/album/whats-wrong-with-pilsen",
+    "stage": "bands",
+    "start": "2024-06-01T20:00"
+  },
+  {
+    "name": "Povodí Ohře",
+    "genre": "Heavy blues",
+    "bandcamp": "https://povodiohre.bandcamp.com/",
+    "stage": "bands",
+    "start": "2024-06-01T21:00"
+  },
+  {
+    "name": "FDK",
+    "genre": "Post metal",
+    "bandcamp": "https://fdkband.bandcamp.com/album/sunlight",
+    "stage": "bands",
+    "start": "2024-06-01T22:00"
+  },
+  {
+    "name": "Lickspit",
+    "genre": "Thrashcore",
+    "bandcamp": "https://lickspit.bandcamp.com/",
+    "stage": "bands",
+    "start": "2024-06-01T23:00"
+  },
+  {
+    "name": "Norbert Morava",
     "genre": "Rap",
-    "facebook": "https://www.facebook.com/podjestedskyokultista/",
-    "bandcamp": "https://podjestedskyokultista.bandcamp.com/album/dvacet-deka-n-hy-ep",
-    "pathPart": "podjestedsky-okultista",
     "stage": "bands",
-    "start": "2023-06-03T20:00"
+    "start": "2024-06-02T00:00"
   },
   {
-    "name": "NĀV",
-    "genre": "Black metal",
-    "facebook": "https://www.facebook.com/navblackmetal/",
-    "bandcamp": "https://navcult.bandcamp.com/music",
-    "pathPart": "nav",
-    "genreCentered": true,
+    "name": "Hlad",
+    "genre": "Dirtrap",
+    "bandcamp": "https://idkfamem.bandcamp.com/",
     "stage": "bands",
-    "start": "2023-06-03T23:00"
+    "start": "2024-06-02T01:00"
   },
   {
-    "name": "The Much Better",
-    "genre": "Emo hardcore screamo",
-    "facebook": "https://www.facebook.com/profile.php?id=100083007540924",
-    "bandcamp": "https://themuchbetter.bandcamp.com/album/burn-church-fun-night",
-    "pathPart": "the-much-better",
-    "stage": "bands",
-    "start": "2023-06-03T18:00"
-  },
-  {
-    "name": "Rutka Laskier",
-    "genre": "Post hardcore",
-    "facebook": "https://www.facebook.com/rutkalaskierband/",
-    "bandcamp": "https://rutkalaskier.bandcamp.com/album/protiklady",
-    "pathPart": "rutka-laskier",
-    "stage": "bands",
-    "start": "2023-06-03T22:00"
-  },
-  {
-    "name": "Skyburn",
-    "genre": "Alternative rock",
-    "facebook": "https://www.facebook.com/skyburnlbc/",
-    "bandcamp": "https://skyburn.bandcamp.com/album/skyburn",
-    "pathPart": "skyburn",
-    "genreCentered": true,
-    "stage": "bands",
-    "start": "2023-06-03T19:00"
-  },
-  {
-    "name": "Frau Zwei",
-
-    "genre": "Technopunk",
-    "facebook": "https://www.facebook.com/FrauZwei/",
-    "bandcamp": "https://frauzwei.bandcamp.com/",
-    "pathPart": "frau-zwei",
-    "stage": "bands",
-    "start": "2023-06-04T01:00"
-  },
-  {
-    "name": "Grayle",
-    "genre": "electro pop",
-    "facebook": "https://www.facebook.com/hgrayle",
-    "pathPart": "grayle",
-    "genreCentered": true,
-    "stage": "bands",
-    "start": "2023-06-03T17:00"
-  },
-  {
-    "name": "Divo Institute",
-    "genre": "Blues",
-    "facebook": "https://divoinstitute.bandcamp.com/album/divo-institute",
-    "pathPart": "divo-institute",
-    "stage": "bands",
-    "start": "2023-06-04T00:00"
-  },
-  {
-    "name": "DYZLEGTIC DIVISION DJS",
+    "name": "Dizlegtic Division & Guests",
     "genre": "house breakbeat electronica",
     "facebook": "https://www.facebook.com/dyzlegticdivision",
     "pathPart": "dyzlegtic-division-djs",
     "stage": "division",
-    "start": "2023-06-03T14:00"
+    "start": "2024-06-01T14:00"
   },
   {
-    "name": "Afternoon Warm up",
-    "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
-    "stage": "monkey",
-    "start": "2023-06-03T14:00"
+    "name": "Dj Eazy",
+    "genre": "",
+    "stage": "division",
+    "start": "2024-06-01T23:00"
   },
   {
-    "name": "Voice K",
-    "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
-    "stage": "monkey",
-    "start": "2023-06-03T20:00"
+    "name": "Ian Rokka & Trtlsqd",
+    "genre": "",
+    "stage": "division",
+    "start": "2024-06-02T00:00"
   },
   {
-    "name": "Skuban",
-    "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
-    "stage": "monkey",
-    "start": "2023-06-03T21:00"
+    "name": "Dizlegtic Division",
+    "genre": "house breakbeat electronica",
+    "facebook": "https://www.facebook.com/dyzlegticdivision",
+    "pathPart": "dyzlegtic-division-djs",
+    "stage": "division",
+    "start": "2024-06-02T02:00"
   },
   {
-    "name": "Erbo",
-    "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
+    "name": "Techno Warm-up",
+    "genre": "Techno",
     "stage": "monkey",
-    "start": "2023-06-03T22:00"
+    "start": "2024-06-01T14:00"
+  },
+  {
+    "name": "Liquid afternoon freestyle",
+    "genre": "DnB Jungle",
+    "stage": "monkey",
+    "start": "2024-06-01T16:00"
+  },
+  {
+    "name": "Krowak",
+    "genre": "DnB Jungle",
+    "stage": "monkey",
+    "start": "2024-06-01T18:00"
+  },
+  {
+    "name": "Woice",
+    "genre": "DnB Jungle",
+    "stage": "monkey",
+    "start": "2024-06-01T19:00"
+  },
+  {
+    "name": "Spin Dat Shit & Voice K",
+    "genre": "DnB Jungle",
+    "stage": "monkey",
+    "start": "2024-06-01T20:00"
   },
   {
     "name": "NelliQ & Dickoro",
     "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
     "stage": "monkey",
-    "start": "2023-06-03T23:00"
+    "start": "2024-06-01T22:00"
   },
   {
-    "name": "Bicman & Stand-up",
+    "name": "Erbo & Vitto",
     "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
     "stage": "monkey",
-    "start": "2023-06-04T00:00"
+    "start": "2024-06-01T23:30"
   },
   {
-    "name": "Vitto & Dr.Dreadly",
+    "name": "Tantrum Desire (UK)",
     "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
     "stage": "monkey",
-    "start": "2023-06-04T01:00"
+    "start": "2024-06-02T01:00"
   },
   {
-    "name": "???",
+    "name": "Stand-up",
     "genre": "DnB Jungle",
-    "facebook": "https://www.facebook.com/MonkeyBoomCrew",
-    "pathPart": "monkeyboom-crew",
     "stage": "monkey",
-    "start": "2023-06-04T02:00"
+    "start": "2024-06-02T02:00"
   },
   {
-    "name": "Jungle Riders",
-    "genre": "Jungle",
-    "facebook": "https://soundcloud.com/jungleriders?fbclid=IwAR2TPMHeYimIlh-BZTW_vX-lKoCGLXPU1f0VWn2bFba-g2HJan0PmMGCQIY",
-    "pathPart": "jungle-riders",
+    "name": "Bicman",
+    "genre": "DnB Jungle",
     "stage": "monkey",
-    "start": "2023-06-03T17:30"
+    "start": "2024-06-02T03:00"
   },
   {
-    "name": "Illuminatrix",
-    "genre": "DnB",
-    "facebook": "https://linktr.ee/illuminatrix?fbclid=IwAR1ucjeGTofYNlfpVJbtKdJ-uWLb4aF-kva1pD1XAW1BnkCGEwEH3ew43q4",
-    "pathPart": "illuminatrix",
+    "name": "V-Tec",
+    "genre": "DnB Jungle",
     "stage": "monkey",
-    "start": "2023-06-03T19:00"
+    "start": "2024-06-02T04:00"
+  },
+  {
+    "name": "Monkeys survivors",
+    "genre": "DnB Jungle",
+    "stage": "monkey",
+    "start": "2024-06-02T05:00"
   },
   {
     "name": "Hedomix",
     "genre": "psytrance",
-    "pathPart": "hedonix-sound-system",
     "stage": "hedonix",
-    "start": "2023-06-03T12:00"
+    "start": "2024-06-01T12:00"
   },
   {
-    "name": "MRTy",
+    "name": "Default",
+    "genre": "psytrance",
+    "stage": "hedonix",
+    "start": "2024-06-01T14:00"
+  },
+  {
+    "name": "Keisaku",
+    "genre": "psytrance",
+    "stage": "hedonix",
+    "start": "2024-06-01T16:00"
+  },
+  {
+    "name": "Newteck",
     "genre": "psytrance",
     "pathPart": "hedonix-sound-system",
     "stage": "hedonix",
-    "start": "2023-06-03T14:00"
+    "start": "2024-06-01T18:00"
+  },
+  {
+    "name": "MP",
+    "genre": "psytrance",
+    "stage": "hedonix",
+    "start": "2024-06-01T20:00"
   },
   {
     "name": "Psyrix",
     "genre": "psytrance",
-    "pathPart": "hedonix-sound-system",
     "stage": "hedonix",
-    "start": "2023-06-03T22:00"
+    "start": "2024-06-01T22:00"
   },
   {
-    "name": "Totentanz",
+    "name": "TurO",
+    "genre": "psytrance",
+    "stage": "hedonix",
+    "start": "2024-06-02T00:00"
+  },
+  {
+    "name": "Lemur",
     "genre": "",
-    "pathPart": "hedonix-sound-system",
-    "stage": "hedonix",
-    "start": "2023-06-04T04:00"
+    "stage": "mzc",
+    "start": "2024-06-01T12:00"
   },
   {
-    "name": "Ja-Ne",
-    "genre": "Bassistaz crew",
-    "pathPart": "ja-ne",
-    "facebook": "https://bassistaz.com/portfolio/ja-ne/",
-    "genreCentered": true,
-    "stage": "hedonix",
-    "start": "2023-06-03T16:00"
+    "name": "Zorben",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-01T15:00"
   },
   {
-    "name": "Raaja",
-    "genre": "Live",
-    "pathPart": "raaja",
-    "url": "https://soundcloud.com/raaja",
-    "stage": "hedonix",
-    "start": "2023-06-03T18:00"
+    "name": "Lobotomikk",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-01T17:30"
   },
   {
-    "name": "Nkyp",
-    "genre": "Techno",
-    "facebook": "https://www.facebook.com/profile.php?id=100063544691569",
-    "pathPart": "nkyp",
-    "stage": "hedonix",
-    "start": "2023-06-04T02:00"
+    "name": "Kenabru",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-01T20:00"
   },
   {
-    "name": "Pavel Krejdl",
-    "genre": "Techno",
-    "pathPart": "pavel-krejdl",
-    "url": "https://www.techno.cz/rozhovor/49862/elektrabel-pavel-krejdl-techno-fakt-zas-tak-casto-neslysis...",
-    "stage": "hedonix",
-    "start": "2023-06-04T00:00"
+    "name": "Gogy",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-01T22:00"
   },
   {
-    "name": "NEWTECK",
-    "genre": "LUK-SI RECORDS",
-    "pathPart": "newteck",
-    "url": "https://soundcloud.com/newteck",
-    "genreCentered": true,
-    "stage": "hedonix",
-    "start": "2023-06-03T20:00"
+    "name": "Adam Vandal",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-02T00:00"
   },
   {
-    "name": "PIOTR SERAFIN + GUESTS",
-    "genre": "MAPPING & VJS",
-    "pathPart": "piotr-serafin-guests"
+    "name": "Cubu",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-02T02:00"
+  },
+  {
+    "name": "GLR b2b Wity",
+    "genre": "",
+    "stage": "mzc",
+    "start": "2024-06-02T04:00"
   }
 ]
