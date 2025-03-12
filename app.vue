@@ -27,7 +27,7 @@ import JoFooter from "~/components/JoFooter.vue";
 <style>
 body {
   background-size: cover;
-  background-image: url("~/static/images/back_min_v2.webp");
+  background-image: url("~/static/images/back_2025.webp");
 }
 
 .page-enter-active,
