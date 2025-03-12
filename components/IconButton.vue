@@ -3,7 +3,7 @@
     v-if="iconComponent"
     :aria-label="`${props.alt || props.iconName} Ještědské Odysey`"
     :href="props.link"
-    class="jo-button--icon rounded-full p-2 sm:p5 inline-flex  border-solid border-2 border-joprimary hover:bg-joprimary group"
+    class="jo-button--icon rounded-full p-2 sm:p5 inline-flex  border-solid border-2 border-jo-primary hover:bg-jo-primary group bg-black-transparent"
     target="_blank"
   >
     <Icon :icon-name="props.iconName" class="m-auto group-hover:fill-black" />

@@ -32,9 +32,9 @@ const currentPath = computed(() => {
   @apply mb-0.5 ml-auto w-fit;
 
   &__item {
-    @apply bg-slate-transparent text-slate-300 text-center text-joprimary font-semibold uppercase tracking-widest;
+    @apply bg-slate-transparent text-slate-300 text-center text-jo-primary font-semibold uppercase tracking-widest;
     @apply hover:text-slate-transparent;
-    @apply hover:bg-joprimary;
+    @apply hover:bg-jo-primary;
     @apply hover:cursor-pointer;
     @apply flex items-center justify-center;
     -moz-transform: skew(-15deg, 0deg);
@@ -44,7 +44,7 @@ const currentPath = computed(() => {
     transform: skew(-15deg, 0deg);
 
     &--active {
-      @apply bg-joprimary;
+      @apply bg-jo-primary;
       @apply text-slate-transparent;
     }
   }

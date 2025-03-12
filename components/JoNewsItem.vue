@@ -19,7 +19,7 @@
 
       <div class="flex flex-row">
         <Icon v-if="props.item.icon" :icon-name="props.item.icon"
-              class="group-hover:bg-joprimary group-hover:fill-black" />
+              class="group-hover:bg-jo-primary group-hover:fill-black" />
         <JoText class="jo-news-item__text" :class="{'pl-4': props.item.icon}">{{ props.item.description }}</JoText>
       </div>
     </a>
@@ -56,12 +56,12 @@ const imagePositionClass = computed(() => {
   }
 
   &__title {
-    @apply text-2xl font-bold text-joprimary bottom-0 left-0 px-2 group-hover:text-black group-hover:bg-joprimary;
+    @apply text-2xl font-bold text-jo-primary bottom-0 left-0 px-2 group-hover:text-black group-hover:bg-jo-primary;
     background-color: rgba(0, 0, 0, 0.9);
   }
 
   &__text {
-    @apply text-sm text-neutral-300 group-hover:bg-joprimary group-hover:text-black;
+    @apply text-sm text-neutral-300 group-hover:bg-jo-primary group-hover:text-black;
   }
 
   &__bottom {
@@ -69,11 +69,11 @@ const imagePositionClass = computed(() => {
   }
 
   &__date {
-    @apply text-base font-bold bg-joprimary px-1 mr-2;
+    @apply text-base font-bold bg-jo-primary px-1 mr-2;
   }
 
   &__location {
-    @apply text-base font-bold bg-joprimary px-1 hover:bg-black hover:text-joprimary;
+    @apply text-base font-bold bg-jo-primary px-1 hover:bg-black hover:text-jo-primary;
   }
 
   &__image {

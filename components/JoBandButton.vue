@@ -41,11 +41,11 @@ const wrapperComponentAttributes = computed(() => {
 
 <style scoped lang="scss">
 .jo-band-button {
-  @apply bg-slate-800 py-1 px-4 border-solid border-4 border-joprimary text-joprimary font-bold relative -skew-x-6
+  @apply bg-slate-800 py-1 px-4 border-solid border-4 border-jo-primary text-jo-primary font-bold relative -skew-x-6
 }
 
 .jo-band-button--hover {
-  @apply hover:bg-joprimary hover:text-slate-800 hover:border-slate-800
+  @apply hover:bg-jo-primary hover:text-slate-800 hover:border-slate-800
 }
 
 .jo-band-name {
@@ -53,7 +53,7 @@ const wrapperComponentAttributes = computed(() => {
 }
 
 .jo-band-genre {
-  @apply absolute px-1 bg-slate-800 whitespace-nowrap text-xs -bottom-3 -right-1 rounded-xl text-joprimary;
+  @apply absolute px-1 bg-slate-800 whitespace-nowrap text-xs -bottom-3 -right-1 rounded-xl text-jo-primary;
 
   &.genre-centered {
     right: 50%;

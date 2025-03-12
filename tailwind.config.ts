@@ -9,8 +9,9 @@ export default <Config>{
         '52': '13rem',
       },
       colors: {
-        'joprimary': "#D781BE",
+        'jo-primary': "#D781BE",
         'slate-transparent': 'rgba(15, 23, 42, 0.9)',
+        'black-transparent': 'rgba(0, 0, 0, 0.4)',
       },
     },
   },

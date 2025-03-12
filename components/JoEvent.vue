@@ -26,7 +26,7 @@
 
 <style scoped>
 .jo-event {
-  @apply z-20 flex items-stretch lg:items-end border-2 border-solid border-joprimary lg:border-0
+  @apply z-20 flex items-stretch lg:items-end border-2 border-solid border-jo-primary lg:border-0
 }
 
 .jo-event--box {
@@ -38,11 +38,11 @@
 }
 
 .jo-event--head {
-  @apply hidden lg:block border-neutral-900 w-full text-center border-solid border-2 text-neutral-300 text-xs xl:text-joprimary bg-neutral-950;
+  @apply hidden lg:block border-neutral-900 w-full text-center border-solid border-2 text-neutral-300 text-xs xl:text-jo-primary bg-neutral-950;
 }
 
 .jo-event--content {
-  @apply py-3 lg:px-4 first-of-type:pl-3 text-joprimary text-base sm:text-xl font-bold lg:text-2xl xl:text-4xl bg-neutral-900 text-center
+  @apply py-3 lg:px-4 first-of-type:pl-3 text-jo-primary text-base sm:text-xl font-bold lg:text-2xl xl:text-4xl bg-neutral-900 text-center
 }
 
 </style>

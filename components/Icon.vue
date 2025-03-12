@@ -2,7 +2,7 @@
   <component
     v-if="iconComponent"
     :is="iconComponent"
-    class="w-5 sm:w-7 shrink-0 fill-joprimary"
+    class="w-5 sm:w-7 shrink-0 fill-jo-primary"
   />
 </template>
 

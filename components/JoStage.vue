@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <h2
-      class="p-2 text-xl text-joprimary font-semibold uppercase bg-slate-900 hover:bg-joprimary hover:text-slate-900 cursor-pointer"
+      class="p-2 text-xl text-jo-primary font-semibold uppercase bg-slate-900 hover:bg-jo-primary hover:text-slate-900 cursor-pointer"
       @click="toogleShow">
       <span v-if="!show">&#9660;</span>
       <span v-if="show">&#9650;</span>
@@ -12,7 +12,7 @@
       <tbody>
       <tr v-for="(band, index) in sortedBands" :key="index" class="text-white">
         <td class="p-1 w-16 text-sm">{{ band.start }}</td>
-        <td class="p-1 text-joprimary">{{ band.name }}</td>
+        <td class="p-1 text-jo-primary">{{ band.name }}</td>
         <td class="p-1 text-sm">{{ band.genre }}</td>
       </tr>
       </tbody>

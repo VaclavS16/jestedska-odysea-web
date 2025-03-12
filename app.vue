@@ -3,7 +3,7 @@
     <div class="h-full z-10 flex flex-col items-center overflow-auto relative">
       <nuxt-link to="/" class="w-48">
         <JoLogo
-          class="absolute w-48 top-0 left-2 sm:left-auto xl:left-0 xl:w-96 z-30 mt-4 xl:mt-10 xl:ml-10 fill-joprimary"
+          class="absolute w-48 top-0 left-2 sm:left-auto xl:left-0 xl:w-96 z-30 mt-4 xl:mt-10 xl:ml-10 fill-jo-primary"
         />
       </nuxt-link>
       <div
