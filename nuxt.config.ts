@@ -18,5 +18,6 @@ export default defineNuxtConfig({
     htmlAttrs: {
       lang: 'cs',
     },
-  }
+  },
+  compatibilityDate: '2025-03-10'
 })
