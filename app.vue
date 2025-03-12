@@ -26,7 +26,7 @@ import JoFooter from "~/components/JoFooter.vue";
 
 <style>
 body {
-  background-size: cover;
+  @apply bg-center bg-cover;
   background-image: url("~/static/images/back_2025.webp");
 }
 
