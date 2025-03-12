@@ -9,7 +9,7 @@ export default <Config>{
         '52': '13rem',
       },
       colors: {
-        'jo-primary': "#D781BE",
+        'jo-primary': "#FFFD0A",
         'slate-transparent': 'rgba(15, 23, 42, 0.9)',
         'black-transparent': 'rgba(0, 0, 0, 0.4)',
       },

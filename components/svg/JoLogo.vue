@@ -17,6 +17,6 @@
 <style scoped>
 .jo-logo {
   animation: pulse 5s infinite;
-  filter: drop-shadow(0 0 8px black);
+  filter: drop-shadow(0px 0px 8px black) drop-shadow(0px 0px 49px black);
 }
 </style>
