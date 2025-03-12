@@ -8,7 +8,7 @@ definePageMeta({
 });
 
 useHead({
-  title: "Ještědská odysea | Festival, kde se sci-fi mění v realitu",
+  title: "Program | Ještědská odysea | Festival, kde se sci-fi mění v realitu",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   charset: "utf-8",
   meta: [
