@@ -12,8 +12,16 @@
       <tbody>
       <tr v-for="(band, index) in sortedBands" :key="index" class="text-white">
         <td class="p-1 w-16 text-sm">{{ band.start }}</td>
-        <td class="p-1 text-jo-primary">{{ band.name }}</td>
+        <td class="p-1 text-jo-primary">
+          <a v-if="band.url" :href="band.url" target="_blank" class="hover:bg-jo-primary hover:text-black">
+            {{ band.name }}
+          </a>
+          <template v-else>
+            {{ band.name }}
+          </template>
+        </td>
         <td class="p-1 text-sm">{{ band.genre }}</td>
+
       </tr>
       </tbody>
     </table>

@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col gap-4 pb-16">
-    <JoStage name="Bands" :interpreters="stages.bands" />
-    <JoStage name="Dizlectic division" :interpreters="stages.division" />
-    <JoStage name="Mozkocuc" :interpreters="stages.mzc" />
-    <JoStage name="Monkey Boom" :interpreters="stages.monkey" />
-    <JoStage name="Hedonix" :interpreters="stages.hedonix" />
+    <JoStage name="The Substance / Bands" :interpreters="stages.bands" />
+    <JoStage name="Event Horizon / Dyzlegtic Division" :interpreters="stages.division" />
+    <JoStage name="Back to the Future / Mzc & Dms" :interpreters="stages.mzc" />
+    <JoStage name="Pandemonium / Monkey boom " :interpreters="stages.monkey" />
+    <JoStage name="Alien / Technord & Steakhouse" :interpreters="stages.technord" />
   </div>
 </template>
 <script lang="ts" setup>
@@ -22,7 +22,7 @@ const stages = computed(() => {
     bands: bands.value.filter(band => band.stage === "bands"),
     division: bands.value.filter(band => band.stage === "division"),
     monkey: bands.value.filter(band => band.stage === "monkey"),
-    hedonix: bands.value.filter(band => band.stage === "hedonix"),
+    technord: bands.value.filter(band => band.stage === "technord"),
     mzc: bands.value.filter(band => band.stage === "mzc"),
   }
 });

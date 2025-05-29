@@ -17,8 +17,4 @@
 .jo-footer__buttons {
   @apply sm:mb-0 order-2 sm:order-1;
 }
-
-.jo-footer__poster {
-  @apply mb-4 sm:mb-0 order-1 sm:order-2 sm:ml-auto;
-}
 </style>
