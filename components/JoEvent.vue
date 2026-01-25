@@ -2,22 +2,22 @@
   <div class="jo-event">
     <div class="jo-event--box">
       <span class="jo-event--head">Den</span>
-      <span class="jo-event--content pl-3">31.</span>
+      <span class="jo-event--content pl-3">13.</span>
     </div>
     <div class="jo-event--box">
       <span class="jo-event--head">Měsíc</span>
-      <span class="jo-event--content">5.</span>
+      <span class="jo-event--content">6.</span>
     </div>
     <div class="jo-event--box">
       <span class="jo-event--head">Rok</span>
-      <span class="jo-event--content">2025</span>
+      <span class="jo-event--content">2026</span>
     </div>
     <div class="jo-event--box h-12 sm:h-14 xl:h-16">
       <IconButton
         class="border-none bg-neutral-900 rounded-none xl:p-4 h-full"
         icon-name="event"
         alt="Facebook událost"
-        link="https://www.facebook.com/events/792961862955177/"
+        link="https://www.facebook.com/events/1589227855106896/"
         title="Facebook událost">
       </IconButton>
     </div>
