@@ -20,11 +20,11 @@ const props = defineProps<{
   border?: boolean
 }>();
 
-const EventIcon = defineAsyncComponent(() => import("~/components/svg/EventIcon.vue"));
-const FacebookIcon = defineAsyncComponent(() => import("~/components/svg/FacebookIcon.vue"));
-const InstagramIcon = defineAsyncComponent(() => import("~/components/svg/InstagramIcon.vue"));
-const LocationIcon = defineAsyncComponent(() => import("~/components/svg/LocationIcon.vue"));
-const TicketIcon = defineAsyncComponent(() => import("~/components/svg/TicketIcon.vue"));
+const EventIcon = defineAsyncComponent(() => import("~/nuxt/components/svg/EventIcon.vue"));
+const FacebookIcon = defineAsyncComponent(() => import("~/nuxt/components/svg/FacebookIcon.vue"));
+const InstagramIcon = defineAsyncComponent(() => import("~/nuxt/components/svg/InstagramIcon.vue"));
+const LocationIcon = defineAsyncComponent(() => import("~/nuxt/components/svg/LocationIcon.vue"));
+const TicketIcon = defineAsyncComponent(() => import("~/nuxt/components/svg/TicketIcon.vue"));
 
 const componentsMap: {
   [iconName: string]: DefineComponent<{}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>

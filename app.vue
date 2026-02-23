@@ -19,9 +19,9 @@
 </template>
 
 <script setup lang="ts">
-import JoLogo from "~/components/svg/JoLogo.vue";
-import JoEvent from "~/components/JoEvent.vue";
-import JoFooter from "~/components/JoFooter.vue";
+import JoLogo from "~/nuxt/components/svg/JoLogo.vue";
+import JoEvent from "~/nuxt/components/JoEvent.vue";
+import JoFooter from "~/nuxt/components/JoFooter.vue";
 </script>
 
 <style>

@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import type { JoNewsItem } from "~/types/joNews";
+import type { JoNewsItem } from "~/nuxt/types/joNews";
 
 const props = defineProps<{
   item: JoNewsItem,

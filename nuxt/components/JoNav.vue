@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import navItemsJson from "~/content/navigation.json";
+import navItemsJson from "~/nuxt/content/navigation.json";
 
 const navItems = ref(navItemsJson);
 

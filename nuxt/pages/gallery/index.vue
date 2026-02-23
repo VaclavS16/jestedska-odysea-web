@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import JoGallery from "~/components/JoGallery.vue";
+import JoGallery from "~/nuxt/components/JoGallery.vue";
 
 definePageMeta({
   layout: "default",

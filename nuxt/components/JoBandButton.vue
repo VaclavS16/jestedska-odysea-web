@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { JoBand } from "~/types/joBand";
+import type { JoBand } from "~/nuxt/types/joBand";
 
 const props = defineProps<{
   band: JoBand,

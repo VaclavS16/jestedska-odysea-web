@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import galleryItems from "~/content/gallery.json"
+import galleryItems from "~/nuxt/content/gallery.json"
 </script>
 
 <style scoped>

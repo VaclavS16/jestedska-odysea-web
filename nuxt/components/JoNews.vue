@@ -3,8 +3,8 @@
 </template>
 
 <script setup lang="ts">
-import joNews from "~/content/news.json";
-import JoNewsItem from "~/components/JoNewsItem.vue";
+import joNews from "~/nuxt/content/news.json";
+import JoNewsItem from "~/nuxt/components/JoNewsItem.vue";
 </script>
 
 <style scoped>
