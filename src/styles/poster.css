@@ -1,0 +1,12 @@
+.jo-poster {
+    @apply w-64 h-auto hover:cursor-zoom-in;
+}
+
+.jo-poster__modal {
+    @apply max-h-screen;
+}
+
+.jo-modal {
+    @apply fixed top-0 left-0 w-full h-full flex items-center justify-center z-50;
+    background-color: rgba(0, 0, 0, 0.6);
+}

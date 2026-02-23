@@ -1,0 +1,28 @@
+.jo-band-button {
+    @apply bg-slate-800 py-1 px-4 border-solid border-4 border-jo-primary text-jo-primary font-bold relative -skew-x-6;
+}
+
+.jo-band-button--hover {
+    @apply hover:bg-jo-primary hover:text-slate-800 hover:border-slate-800;
+}
+
+.jo-band-button--active {
+    @apply bg-jo-primary text-slate-800 border-slate-800;
+}
+
+.jo-band-name {
+    @apply uppercase;
+}
+
+.jo-band-genre {
+    @apply absolute px-1 bg-slate-800 whitespace-nowrap text-xs -bottom-3 -right-1 rounded-xl text-jo-primary;
+}
+
+.jo-band-button--active .jo-band-genre {
+    @apply bg-slate-800 text-jo-primary;
+}
+
+.jo-band-genre.genre-centered {
+    right: 50%;
+    transform: translateX(50%);
+}

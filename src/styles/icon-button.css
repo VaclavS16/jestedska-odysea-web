@@ -1,0 +1,3 @@
+.jo-button--icon:hover {
+    animation: pulse-border 1s infinite;
+}

@@ -1,0 +1,4 @@
+.jo-band__image {
+    @apply block min-w-52 h-52 bg-cover bg-center;
+    filter: sepia(84%) saturate(3228%) hue-rotate(67deg) brightness(93%) contrast(120%);
+}

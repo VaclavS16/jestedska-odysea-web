@@ -1,4 +1,4 @@
-import { Config } from 'tailwind'
+import { Config } from '@tailwindcss/vite'
 
 export default <Config>{
   theme: {

@@ -1,9 +1,9 @@
 <div data-poster-root>
-  <img alt="Plagát" class="jo-poster" data-poster-open src="/2023poster_800.webp" />
+    <img alt="Plagát" class="jo-poster" data-poster-open src="/2023poster_800.webp" />
 
-  <div class="jo-modal hidden" data-poster-modal role="dialog" aria-modal="true" aria-label="Festivalový plakát">
-    <img alt="Plagát" class="jo-poster__modal" src="/2023poster_2000.webp" />
-  </div>
+    <div class="jo-modal hidden" data-poster-modal role="dialog" aria-modal="true" aria-label="Festivalový plakát">
+        <img alt="Plagát" class="jo-poster__modal" src="/2023poster_2000.webp" />
+    </div>
 </div>
 
 <script is:inline>
@@ -33,18 +33,3 @@
     setupPoster(el);
   });
 </script>
-
-<style>
-  .jo-poster {
-    @apply w-64 h-auto hover:cursor-zoom-in;
-  }
-
-  .jo-poster__modal {
-    @apply max-h-screen;
-  }
-
-  .jo-modal {
-    @apply fixed top-0 left-0 w-full h-full flex items-center justify-center z-50;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-</style>
