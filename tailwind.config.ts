@@ -1,6 +1,4 @@
-import { Config } from 'tailwindcss'
-
-const colors = require('tailwindcss/colors')
+import { Config } from 'tailwind'
 
 export default <Config>{
   theme: {
@@ -16,8 +14,6 @@ export default <Config>{
     },
   },
   content: [
-    './pages/**/*.{html,js,vue}',
-    './components/**/*.{html,js,vue}',
-    './app.vue',
+    './src/**/*.{astro,html,js,ts,md,mdx}',
   ],
 }

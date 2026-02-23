@@ -1,0 +1,39 @@
+---
+import programData from "../content/program.json";
+import type { JoBand } from "../types/content";
+import { toBandSlug } from "../utils/program";
+import JoText from "./JoText.astro";
+
+interface Props {
+  activeBandSlug?: string;
+}
+
+const { activeBandSlug } = Astro.props;
+const bands = programData as JoBand[];
+const activeBand = bands.find((band) => toBandSlug(band) === activeBandSlug);
+const externalLink = activeBand?.bandcamp || activeBand?.url || activeBand?.facebook;
+---
+
+{activeBand && (
+  <div class="mt-8 bg-black/70 p-4 border border-jo-primary">
+    <h2 class="text-2xl text-jo-primary font-bold uppercase">{activeBand.name}</h2>
+    <p class="text-neutral-300 mb-3">{activeBand.genre}</p>
+
+    {activeBand.imgPath && <span style={`background-image: url(${activeBand.imgPath})`} class="jo-band__image mb-3"></span>}
+
+    {activeBand.desc && <JoText class="w-full text-neutral-300">{activeBand.desc}</JoText>}
+
+    {externalLink && (
+      <a href={externalLink} target="_blank" rel="noopener noreferrer" class="text-jo-primary hover:bg-jo-primary hover:text-black px-1">
+        Externí odkaz
+      </a>
+    )}
+  </div>
+)}
+
+<style>
+  .jo-band__image {
+    @apply block min-w-52 h-52 bg-cover bg-center;
+    filter: sepia(84%) saturate(3228%) hue-rotate(67deg) brightness(93%) contrast(120%);
+  }
+</style>

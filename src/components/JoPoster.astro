@@ -1,0 +1,50 @@
+<div data-poster-root>
+  <img alt="Plagát" class="jo-poster" data-poster-open src="/2023poster_800.webp" />
+
+  <div class="jo-modal hidden" data-poster-modal role="dialog" aria-modal="true" aria-label="Festivalový plakát">
+    <img alt="Plagát" class="jo-poster__modal" src="/2023poster_2000.webp" />
+  </div>
+</div>
+
+<script is:inline>
+  const setupPoster = (root) => {
+    if (!(root instanceof HTMLElement) || root.dataset.posterReady === "true") return;
+
+    const openButton = root.querySelector("[data-poster-open]");
+    const modal = root.querySelector("[data-poster-modal]");
+    if (!(openButton instanceof HTMLElement) || !(modal instanceof HTMLElement)) return;
+
+    root.dataset.posterReady = "true";
+
+    const open = () => modal.classList.remove("hidden");
+    const close = () => modal.classList.add("hidden");
+
+    openButton.addEventListener("click", open);
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) close();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+  };
+
+  document.querySelectorAll("[data-poster-root]").forEach((el) => {
+    setupPoster(el);
+  });
+</script>
+
+<style>
+  .jo-poster {
+    @apply w-64 h-auto hover:cursor-zoom-in;
+  }
+
+  .jo-poster__modal {
+    @apply max-h-screen;
+  }
+
+  .jo-modal {
+    @apply fixed top-0 left-0 w-full h-full flex items-center justify-center z-50;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+</style>

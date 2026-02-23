@@ -1,0 +1,16 @@
+---
+import programData from "../content/program.json";
+import type { JoBand } from "../types/content";
+import JoBandButton from "./JoBandButton.astro";
+
+interface Props {
+  activeBandSlug?: string;
+}
+
+const { activeBandSlug } = Astro.props;
+const bands = programData as JoBand[];
+---
+
+<div class="flex flex-row flex-wrap place-content-center gap-4">
+  {bands.map((band) => <JoBandButton band={band} activeBandSlug={activeBandSlug} />)}
+</div>

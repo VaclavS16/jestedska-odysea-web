@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import JoGallery from "../../components/JoGallery.astro";
+
+const description = "Ještědská odysea je multižánrový hudební a kulturní festival, jenž se koná v Liberci.";
+---
+
+<BaseLayout
+  title="Galerie | Ještědská odysea 2025 | Festival, kde se sci-fi mění v realitu"
+  description={description}
+  currentPath="/gallery"
+>
+  <JoGallery />
+</BaseLayout>

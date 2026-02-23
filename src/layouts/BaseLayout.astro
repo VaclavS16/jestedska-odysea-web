@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+import JoLogo from "../components/JoLogo.astro";
+import JoNav from "../components/JoNav.astro";
+import JoEvent from "../components/JoEvent.astro";
+import JoFooter from "../components/JoFooter.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  currentPath: string;
+}
+
+const { title, description, currentPath } = Astro.props;
+---
+
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <div class="jo-wrapper bg-center bg-cover h-screen overflow-hidden">
+      <div class="h-full z-10 flex flex-col items-center overflow-auto relative">
+        <a href="/" class="w-48" aria-label="Domů">
+          <JoLogo class="absolute w-48 top-0 left-2 sm:left-auto xl:left-0 xl:w-96 z-30 mt-4 xl:mt-10 xl:ml-10 fill-jo-primary" />
+        </a>
+
+        <div class="jo-content mt-40 mb-20 xl:mt-40 w-11/12 sm:w-3/4 lg:w-1/2 z-40">
+          <JoNav currentPath={currentPath} />
+          <slot />
+        </div>
+
+        <div class="mt-0 absolute right-0 lg:right-20 top-10">
+          <JoEvent />
+        </div>
+        <div class="z-20 md:fixed bottom-0 left-0 w-full">
+          <JoFooter />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

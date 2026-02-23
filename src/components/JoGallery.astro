@@ -1,0 +1,17 @@
+---
+import galleryItems from "../content/gallery.json";
+import type { GalleryItem } from "../types/content";
+import JoGalleryItem from "./JoGalleryItem.astro";
+
+const items = galleryItems as GalleryItem[];
+---
+
+<div class="jo-gallery">
+  {items.map((item) => <JoGalleryItem item={item} />)}
+</div>
+
+<style>
+  .jo-gallery {
+    @apply rounded-md p-2 w-full bg-black flex flex-col;
+  }
+</style>

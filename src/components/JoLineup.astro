@@ -1,0 +1,23 @@
+---
+import programData from "../content/program.json";
+import type { JoBand } from "../types/content";
+import JoStage from "./JoStage.astro";
+
+const bands = programData as JoBand[];
+
+const stages = {
+  bands: bands.filter((band) => band.stage === "bands"),
+  division: bands.filter((band) => band.stage === "division"),
+  monkey: bands.filter((band) => band.stage === "monkey"),
+  technord: bands.filter((band) => band.stage === "technord"),
+  mzc: bands.filter((band) => band.stage === "mzc"),
+};
+---
+
+<div class="flex flex-col gap-4 pb-16">
+  <JoStage name="The Substance / Bands" interpreters={stages.bands} />
+  <JoStage name="Event Horizon / Dyzlegtic Division" interpreters={stages.division} />
+  <JoStage name="Back to the Future / Mzc & Dms" interpreters={stages.mzc} />
+  <JoStage name="Pandemonium / Monkey boom" interpreters={stages.monkey} />
+  <JoStage name="Alien / Technord & Steakhouse" interpreters={stages.technord} />
+</div>

@@ -1,46 +1,38 @@
-# Astro Starter Kit: Basics
+# Ještědská Odysea Web (Astro)
 
-```sh
-yarn create astro@latest -- --template basics
-```
+This project has been migrated from Nuxt/Vue to Astro with vanilla JS, Tailwind CSS, and Astro components.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Stack
 
-## 🚀 Project Structure
+- Astro 5
+- Tailwind CSS via `@astrojs/tailwind`
+- Static JSON content in `src/content/`
+- No Vue/Nuxt runtime in production
 
-Inside of your Astro project, you'll see the following folders and files:
+## Routes
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- `/`
+- `/gallery`
+- `/info`
+- `/program`
+- `/program/[band]` (static paths generated from `src/content/program.json`)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Content files
 
-## 🧞 Commands
+- `src/content/news.json`
+- `src/content/gallery.json`
+- `src/content/navigation.json`
+- `src/content/program.json`
 
-All commands are run from the root of the project, from a terminal:
+## Assets
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `yarn install`             | Installs dependencies                            |
-| `yarn dev`             | Starts local dev server at `localhost:4321`      |
-| `yarn build`           | Build your production site to `./dist/`          |
-| `yarn preview`         | Preview your build locally, before deploying     |
-| `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `yarn astro -- --help` | Get help using the Astro CLI                     |
+- Images: `public/images/`
+- News images (legacy-compatible URLs): `public/news/`
+- Fonts: `public/fonts/`
 
-## 👀 Want to learn more?
+## Commands
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `yarn dev` - start local development server
+- `yarn check` - run Astro type/content checks
+- `yarn build` - build production output
+- `yarn preview` - preview production build

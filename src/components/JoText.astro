@@ -1,0 +1,42 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<div class={`jo-text ${className}`} data-typed-root>
+  <span data-typed-output></span>
+  <span data-typed-source class="hidden"><slot /></span>
+</div>
+
+<script is:inline>
+  const typeText = (root) => {
+    if (!(root instanceof HTMLElement) || root.dataset.typedReady === "true") return;
+
+    const source = root.querySelector("[data-typed-source]");
+    const output = root.querySelector("[data-typed-output]");
+    if (!(source instanceof HTMLElement) || !(output instanceof HTMLElement)) return;
+
+    root.dataset.typedReady = "true";
+
+    const fullText = source.innerText;
+    let index = 0;
+
+    const tick = () => {
+      if (index >= fullText.length) return;
+      output.textContent = (output.textContent || "") + fullText[index];
+      index += 1;
+      requestAnimationFrame(tick);
+    };
+
+    setTimeout(() => {
+      tick();
+    }, 700);
+  };
+
+  document.querySelectorAll("[data-typed-root]").forEach((root) => {
+    typeText(root);
+  });
+</script>

@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import JoNews from "../components/JoNews.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import JoBaseInfo from "../../components/JoBaseInfo.astro";
 
 const description = "Ještědská odysea je multižánrový hudební a kulturní festival, jenž se koná v Liberci.";
 ---
@@ -8,7 +8,7 @@ const description = "Ještědská odysea je multižánrový hudební a kulturní
 <BaseLayout
   title="Ještědská odysea | Festival, kde se sci-fi mění v realitu"
   description={description}
-  currentPath="/"
+  currentPath="/info"
 >
-  <JoNews />
+  <JoBaseInfo />
 </BaseLayout>

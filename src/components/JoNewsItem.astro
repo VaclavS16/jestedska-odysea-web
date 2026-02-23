@@ -1,0 +1,113 @@
+---
+import Icon from "./Icon.astro";
+import JoText from "./JoText.astro";
+import type { JoNewsItem as NewsItemType } from "../types/content";
+
+interface Props {
+  item: NewsItemType;
+}
+
+const { item } = Astro.props;
+
+const formattedDate = item.date
+  ? `${new Date(item.date).getDate()}|${new Date(item.date).getMonth() + 1}|${new Date(item.date).getFullYear()}`
+  : "";
+const imagePositionClass = item.imagePosition ? `jo-news-item__image--${item.imagePosition}` : "jo-news-item__image--center";
+---
+
+<div class="jo-news-item__wrapper">
+  <a href={item.link} aria-label={`Jdi na událost pro ${item.title}`} target="_blank" rel="noopener noreferrer" class="group">
+    <div class="overflow-hidden relative">
+      {item.image && (
+        <img src={item.image} alt="Cover image pro zprávu" class={`jo-news-item__image group-hover:brightness-125 ${imagePositionClass}`} />
+      )}
+      <h2 class={`jo-news-item__title ${item.image ? "absolute" : ""}`}>{item.title}</h2>
+    </div>
+
+    <div class="flex flex-row">
+      {item.icon && <Icon iconName={item.icon} class="group-hover:bg-jo-primary group-hover:fill-black" />}
+      <JoText class={`jo-news-item__text ${item.icon ? "pl-4" : ""}`}>{item.description}</JoText>
+    </div>
+  </a>
+
+  {(item.date || item.locationUrl || item.location) && (
+    <div class="jo-news-item__bottom">
+      <p class="jo-news-item__date">{formattedDate}</p>
+      {item.locationUrl && item.location ? (
+        <a href={item.locationUrl} aria-label={`Kde se nachází: ${item.title}`} target="_blank" rel="noopener noreferrer" class="jo-news-item__location">
+          {item.location}
+        </a>
+      ) : (
+        <span class="jo-news-item__location">{item.location || ""}</span>
+      )}
+    </div>
+  )}
+</div>
+
+<style>
+  .jo-news-item__wrapper {
+    @apply rounded-md p-2 w-full;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .jo-news-item__title {
+    @apply text-2xl font-bold text-jo-primary bottom-0 left-0 px-2 group-hover:text-black group-hover:bg-jo-primary;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .jo-news-item__text {
+    @apply text-sm text-neutral-300 group-hover:bg-jo-primary group-hover:text-black;
+  }
+
+  .jo-news-item__bottom {
+    @apply flex justify-between items-center mt-4;
+  }
+
+  .jo-news-item__date {
+    @apply text-base font-bold bg-jo-primary px-1 mr-2;
+  }
+
+  .jo-news-item__location {
+    @apply text-base font-bold bg-jo-primary px-1 hover:bg-black hover:text-jo-primary;
+  }
+
+  .jo-news-item__image {
+    @apply w-full h-48 object-cover rounded-md;
+    animation: zoomInOut 5s infinite;
+  }
+
+  .jo-news-item__image--center {
+    @apply object-center;
+  }
+
+  .jo-news-item__image--top {
+    @apply object-top;
+  }
+
+  .jo-news-item__image--bottom {
+    @apply object-bottom;
+  }
+
+  .jo-news-item__image--left {
+    @apply object-left;
+  }
+
+  .jo-news-item__image--right {
+    @apply object-right;
+  }
+
+  .jo-news-item__wrapper:only-child .jo-news-item__image {
+    height: calc(100vh - 20rem);
+  }
+
+  @keyframes zoomInOut {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.03);
+    }
+  }
+</style>
