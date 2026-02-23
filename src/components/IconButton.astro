@@ -5,16 +5,25 @@ interface Props {
   iconName: "event" | "facebook" | "instagram" | "location" | "ticket";
   link: string;
   alt?: string;
+  withouBorder?: boolean;
   class?: string;
 }
 
-const { iconName, link, alt, class: className = "" } = Astro.props;
+const {
+  iconName,
+  link,
+  alt,
+  withouBorder = false,
+  class: className = "",
+} = Astro.props;
 ---
 
 <a
   aria-label={`${alt || iconName} Ještědské Odysey`}
   href={link}
-  class={`jo-button--icon rounded-full p-2 inline-flex border-solid border-2 border-jo-primary hover:bg-jo-primary group bg-black-transparent ${className}`}
+  class={`jo-button--icon rounded-full p-2 inline-flex ${
+    withouBorder ? "" : "border-solid border-2 border-jo-primary"
+  } hover:bg-jo-primary group bg-black-transparent ${className}`}
   target="_blank"
   rel="noopener noreferrer"
 >

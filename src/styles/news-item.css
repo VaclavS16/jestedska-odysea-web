@@ -49,10 +49,6 @@
     @apply object-right;
 }
 
-.jo-news-item__wrapper:only-child .jo-news-item__image {
-    height: calc(100vh - 20rem);
-}
-
 @keyframes zoomInOut {
     0%,
     100% {
