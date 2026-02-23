@@ -1,3 +1,11 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <path d="M9,8L6,8L6,12L9,12L9,24L14,24L14,12L17.642,12L18,8L14,8L14,6.333C14,5.378 14.192,5 15.115,5L18,5L18,0L14.192,0C10.596,0 9,1.583 9,4.615L9,8Z" />
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class={`${className}`}>
+    <path d="M9,8L6,8L6,12L9,12L9,24L14,24L14,12L17.642,12L18,8L14,8L14,6.333C14,5.378 14.192,5 15.115,5L18,5L18,0L14.192,0C10.596,0 9,1.583 9,4.615L9,8Z" />
 </svg>
