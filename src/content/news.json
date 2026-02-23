@@ -5,7 +5,7 @@
     "date": "2026-03-20",
     "location": "Argonaut",
     "locationUrl": "https://maps.app.goo.gl/mW7v3VngHYx4gN7p6",
-    "image": "/news/2026winter.webp",
+    "image": "2026winter.webp",
     "imagePosition": "top",
     "link": "https://www.facebook.com/events/1989100561855572"
   },
@@ -15,13 +15,13 @@
     "date": "2026-06-13",
     "location": "Sportovní areál Vesec, Liberec",
     "locationUrl": "https://maps.app.goo.gl/y8zgiSpKRDCfQs9x6",
-    "image": "/news/jo2026.webp",
+    "image": "jo2026.webp",
     "imagePosition": "top",
     "link": "https://www.facebook.com/events/1589227855106896/"
   },
   {
     "title": "Předprodej vstupenek",
-    "image": "/news/presale2026.webp",
+    "image": "presale2026.webp",
     "description": "Předprodej zahájen. Kupte si vstupenku dopředu, ušetříte nějakou tu korunu na drinky a čas při příchodu na akci!",
     "link": "https://www.book-tickets.cz/?page=bookticket&event=164",
     "icon": "ticket"

@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import Icon from "./Icon.astro";
 import JoText from "./JoText.astro";
 import type { JoNewsItem as NewsItemType } from "../types/content";
@@ -13,17 +15,31 @@ const formattedDate = item.date
   ? `${new Date(item.date).getDate()}|${new Date(item.date).getMonth() + 1}|${new Date(item.date).getFullYear()}`
   : "";
 const imagePositionClass = item.imagePosition ? `jo-news-item__image--${item.imagePosition}` : "jo-news-item__image--center";
+
+const newsImages = import.meta.glob("../assets/news/*.{avif,gif,jpeg,jpg,png,webp}", {
+  eager: true,
+  import: "default",
+}) as Record<string, ImageMetadata>;
+
+const resolveNewsImage = (value?: string): ImageMetadata | undefined => {
+  if (!value) return undefined;
+  const fileName = value.split("/").pop();
+  if (!fileName) return undefined;
+  return newsImages[`../assets/news/${fileName}`];
+};
+
+const newsImage = resolveNewsImage(item.image);
 ---
 
 <div class="jo-news-item__wrapper">
     <a href={item.link} aria-label={`Jdi na událost pro ${item.title}`} target="_blank" rel="noopener noreferrer"
        class="group">
         <div class="overflow-hidden relative">
-          {item.image && (
-                  <img src={item.image} alt="Cover image pro zprávu"
-                       class={`jo-news-item__image group-hover:brightness-125 ${imagePositionClass}`} />
+          {newsImage && (
+                  <Image src={newsImage} alt="Cover image pro zprávu"
+                         class={`jo-news-item__image group-hover:brightness-125 ${imagePositionClass}`} />
           )}
-            <h2 class={`jo-news-item__title ${item.image ? "absolute" : ""}`}>{item.title}</h2>
+            <h2 class={`jo-news-item__title ${newsImage ? "absolute" : ""}`}>{item.title}</h2>
         </div>
 
         <div class="flex flex-row">

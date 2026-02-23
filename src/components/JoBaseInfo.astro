@@ -1,3 +1,9 @@
+---
+import { Image } from "astro:assets";
+import map1 from "../assets/maps/map1.png";
+import map2 from "../assets/maps/map2.png";
+---
+
 <div class="pb-16">
   <p class="bg-slate-transparent text-white p-2">
     JO!\\UPDATE\\***... <br />
@@ -24,6 +30,6 @@
     kód na vaší vstupence)<br />
     Těšíme se na vás:
   </p>
-  <img src="/images/map1.png" alt="Mapa - Sportovní areál Vesec - Liberec" />
-  <img src="/images/map2.png" alt="Mapa - Sportovní areál Vesec - Liberec" />
+  <Image src={map1} alt="Mapa - Sportovní areál Vesec - Liberec" />
+  <Image src={map2} alt="Mapa - Sportovní areál Vesec - Liberec" />
 </div>
