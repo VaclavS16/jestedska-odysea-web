@@ -7,11 +7,11 @@ const { class: className = "" } = Astro.props;
 ---
 
 <div class={`jo-text ${className}`} data-typed-root>
-  <span data-typed-output></span>
-  <span data-typed-source class="hidden"><slot /></span>
+    <span data-typed-output></span>
+    <span data-typed-source class="hidden"><slot /></span>
 </div>
 
-<script is:inline>
+<script>
   const typeText = (root) => {
     if (!(root instanceof HTMLElement) || root.dataset.typedReady === "true") return;
 
