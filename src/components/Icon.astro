@@ -1,0 +1,26 @@
+---
+import EventIcon from "./icons/EventIcon.astro";
+import FacebookIcon from "./icons/FacebookIcon.astro";
+import InstagramIcon from "./icons/InstagramIcon.astro";
+import LocationIcon from "./icons/LocationIcon.astro";
+import TicketIcon from "./icons/TicketIcon.astro";
+
+interface Props {
+  iconName: "event" | "facebook" | "instagram" | "location" | "ticket";
+  class?: string;
+}
+
+const { iconName, class: className = "" } = Astro.props;
+
+const iconMap = {
+  event: EventIcon,
+  facebook: FacebookIcon,
+  instagram: InstagramIcon,
+  location: LocationIcon,
+  ticket: TicketIcon,
+} as const;
+
+const IconComponent = iconMap[iconName];
+---
+
+<IconComponent class={`w-5 sm:w-7 shrink-0 fill-jo-primary ${className}`} />

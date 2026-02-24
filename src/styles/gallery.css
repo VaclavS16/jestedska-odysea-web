@@ -1,0 +1,3 @@
+.jo-gallery {
+    @apply rounded-md p-2 w-full bg-black flex flex-col;
+}

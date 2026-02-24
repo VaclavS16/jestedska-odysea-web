@@ -1,0 +1,15 @@
+---
+import news from "../content/news.json";
+import type { JoNewsItem } from "../types/content";
+import JoNewsItemComponent from "./JoNewsItem.astro";
+
+const items = news as JoNewsItem[];
+---
+
+{
+  items.map((item, index) => (
+  <div class="mb-4">
+      <JoNewsItemComponent item={item} lazy={index > 1} />
+  </div>
+    ))
+  }

@@ -1,28 +1,19 @@
-import {Config} from 'tailwindcss'
-
-const colors = require('tailwindcss/colors')
+import { Config } from '@tailwindcss/vite'
 
 export default <Config>{
   theme: {
     extend: {
       minWidth: {
         '52': '13rem',
-      }
-    },
-    colors: {
-      'joyellow': "#FADD00",
-      'green': colors.green,
-      'white': colors.white,
-      'black': colors.black,
-      'slate': colors.slate,
-      'slate-transparent': 'rgba(15, 23, 42, 0.9)',
-      'cyan': colors.cyan,
-      'emerald': colors.emerald,
+      },
+      colors: {
+        'jo-primary': "#FFFD0A",
+        'slate-transparent': 'rgba(15, 23, 42, 0.9)',
+        'black-transparent': 'rgba(0, 0, 0, 0.4)',
+      },
     },
   },
   content: [
-    './pages/**/*.{html,js,vue}',
-    './components/**/*.{html,js,vue}',
-    './app.vue',
+    './src/**/*.{astro,html,js,ts,md,mdx}',
   ],
 }

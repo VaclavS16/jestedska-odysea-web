@@ -1,0 +1,8 @@
+.jo-footer {
+    @apply flex flex-col items-center sm:flex-row sm:items-end;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.jo-footer__buttons {
+    @apply sm:mb-0 order-2 sm:order-1;
+}

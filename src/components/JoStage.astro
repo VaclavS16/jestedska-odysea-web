@@ -1,0 +1,80 @@
+---
+import type { JoBand } from "../types/content";
+import { formatBandTime } from "../utils/program";
+
+interface Props {
+  interpreters: JoBand[];
+  name: string;
+}
+
+const { interpreters, name } = Astro.props;
+const sortedBands = [...interpreters]
+  .sort((a, b) => (a.start || "").localeCompare(b.start || ""))
+  .map((band) => ({
+    ...band,
+    formattedStart: formatBandTime(band.start),
+  }));
+---
+
+<div data-stage-root data-stage-name={name}>
+  <button type="button" class="p-2 text-xl text-jo-primary font-semibold uppercase bg-slate-900 hover:bg-jo-primary hover:text-slate-900 cursor-pointer w-full text-left" data-stage-toggle>
+    <span data-stage-arrow>▼</span>
+    {name}
+  </button>
+
+  <table class="table-fixed bg-slate-transparent w-full text-base" data-stage-table>
+    <tbody>
+      {sortedBands.map((band) => (
+        <tr class="text-white">
+          <td class="p-1 w-16 text-sm">{band.formattedStart}</td>
+          <td class="p-1 text-jo-primary">
+            {band.url ? (
+              <a href={band.url} target="_blank" rel="noopener noreferrer" class="hover:bg-jo-primary hover:text-black">{band.name}</a>
+            ) : (
+              <span>{band.name}</span>
+            )}
+          </td>
+          <td class="p-1 text-sm">{band.genre}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<script is:inline>
+  const setupStage = (root) => {
+    if (!(root instanceof HTMLElement) || root.dataset.stageReady === "true") return;
+
+    const name = root.dataset.stageName;
+    const toggle = root.querySelector("[data-stage-toggle]");
+    const table = root.querySelector("[data-stage-table]");
+    const arrow = root.querySelector("[data-stage-arrow]");
+
+    if (!name || !(toggle instanceof HTMLElement) || !(table instanceof HTMLElement) || !(arrow instanceof HTMLElement)) {
+      return;
+    }
+
+    root.dataset.stageReady = "true";
+
+    const storageKey = `show-${name}`;
+    const stored = localStorage.getItem(storageKey);
+    let isOpen = stored !== "false";
+
+    const sync = () => {
+      table.classList.toggle("hidden", !isOpen);
+      arrow.textContent = isOpen ? "▲" : "▼";
+    };
+
+    toggle.addEventListener("click", () => {
+      isOpen = !isOpen;
+      localStorage.setItem(storageKey, isOpen ? "true" : "false");
+      sync();
+    });
+
+    sync();
+  };
+
+  document.querySelectorAll("[data-stage-root]").forEach((el) => {
+    setupStage(el);
+  });
+</script>

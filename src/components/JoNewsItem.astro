@@ -1,0 +1,71 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import Icon from "./Icon.astro";
+import JoText from "./JoText.astro";
+import type { JoNewsItem as NewsItemType } from "../types/content";
+
+interface Props {
+  item: NewsItemType;
+  lazy: boolean;
+}
+
+const { item, lazy } = Astro.props;
+
+const formattedDate = item.date
+  ? `${new Date(item.date).getDate()}|${new Date(item.date).getMonth() + 1}|${new Date(item.date).getFullYear()}`
+  : "";
+const imagePositionClass = item.imagePosition ? `jo-news-item__image--${item.imagePosition}` : "jo-news-item__image--center";
+
+const newsImages = import.meta.glob("../assets/news/*.{avif,gif,jpeg,jpg,png,webp}", {
+  eager: true,
+  import: "default",
+}) as Record<string, ImageMetadata>;
+
+const resolveNewsImage = (value?: string): ImageMetadata | undefined => {
+  if (!value) return undefined;
+  const fileName = value.split("/").pop();
+  if (!fileName) return undefined;
+  return newsImages[`../assets/news/${fileName}`];
+};
+
+const newsImage = resolveNewsImage(item.image);
+---
+
+<div class="jo-news-item__wrapper">
+    <a href={item.link} aria-label={`Jdi na událost pro ${item.title}`} target="_blank" rel="noopener noreferrer"
+       class="group">
+        <div class="overflow-hidden relative">
+          {newsImage && (
+                  <Image
+                          src={newsImage}
+                          alt={item.title}
+                          class={`jo-news-item__image group-hover:brightness-125 ${imagePositionClass}`}
+                          loading={lazy ? "lazy" : "eager"}
+                          fetchpriority={lazy ? "low" : "high"}
+                  />
+          )}
+            <h2 class={`jo-news-item__title ${newsImage ? "absolute" : ""}`}>{item.title}</h2>
+        </div>
+
+        <div class="flex flex-row">
+          {item.icon &&
+                  <Icon iconName={item.icon} class="group-hover:bg-jo-primary group-hover:fill-black" />}
+            <JoText class={`jo-news-item__text ${item.icon ? "pl-4" : ""}`}>{item.description}</JoText>
+        </div>
+    </a>
+
+  {(item.date || item.locationUrl || item.location) && (
+          <div class="jo-news-item__bottom">
+              <p class="jo-news-item__date">{formattedDate}</p>
+            {item.locationUrl && item.location ? (
+                    <a href={item.locationUrl} aria-label={`Kde se nachází: ${item.title}`} target="_blank"
+                       rel="noopener noreferrer" class="jo-news-item__location">
+                      {item.location}
+                    </a>
+            ) : (
+                    <span class="jo-news-item__location">{item.location || ""}</span>
+            )}
+          </div>
+  )}
+</div>

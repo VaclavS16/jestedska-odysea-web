@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+const posterImages = import.meta.glob("../assets/posters/*.{avif,gif,jpeg,jpg,png,webp}", {
+  eager: true,
+  import: "default",
+}) as Record<string, ImageMetadata>;
+
+const posterPreview = posterImages["../assets/posters/2023poster_800.webp"];
+const posterFull = posterImages["../assets/posters/2023poster_2000.webp"];
+---
+
+<div data-poster-root>
+  {posterPreview && <Image alt="Plagát" class="jo-poster" data-poster-open src={posterPreview} />}
+
+  <div class="jo-modal hidden" data-poster-modal role="dialog" aria-modal="true" aria-label="Festivalový plakát">
+    {posterFull && <Image alt="Plagát" class="jo-poster__modal" src={posterFull} />}
+  </div>
+</div>
+
+<script is:inline>
+  const setupPoster = (root) => {
+    if (!(root instanceof HTMLElement) || root.dataset.posterReady === "true") return;
+
+    const openButton = root.querySelector("[data-poster-open]");
+    const modal = root.querySelector("[data-poster-modal]");
+    if (!(openButton instanceof HTMLElement) || !(modal instanceof HTMLElement)) return;
+
+    root.dataset.posterReady = "true";
+
+    const open = () => modal.classList.remove("hidden");
+    const close = () => modal.classList.add("hidden");
+
+    openButton.addEventListener("click", open);
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) close();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+  };
+
+  document.querySelectorAll("[data-poster-root]").forEach((el) => {
+    setupPoster(el);
+  });
+</script>

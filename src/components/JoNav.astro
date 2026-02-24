@@ -1,0 +1,24 @@
+---
+import navItems from "../content/navigation.json";
+import type { NavigationItem } from "../types/content";
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const items = navItems as NavigationItem[];
+---
+
+<nav class="jo-nav">
+    <ul class="flex flex-row justify-center">
+      {items.map((item) => (
+              <li class={`jo-nav__item ${currentPath === item.path ? "jo-nav__item--active" : ""}`}>
+                  <a href={item.path} class="px-2 py-1" aria-current={currentPath === item.path ? "page" : undefined}>
+                    {item.title}
+                  </a>
+              </li>
+      ))}
+    </ul>
+</nav>
+

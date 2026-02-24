@@ -1,42 +1,38 @@
-# Nuxt 3 Minimal Starter
+# Ještědská Odysea Web (Astro)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This project has been migrated from Nuxt/Vue to Astro with vanilla JS, Tailwind CSS, and Astro components.
 
-## Setup
+## Stack
 
-Make sure to install the dependencies:
+- Astro 5
+- Tailwind CSS via `@astrojs/tailwind`
+- Static JSON content in `src/content/`
+- No Vue/Nuxt runtime in production
 
-```bash
-# yarn
-yarn install
+## Routes
 
-# npm
-npm install
+- `/`
+- `/gallery`
+- `/info`
+- `/program`
+- `/program/[band]` (static paths generated from `src/content/program.json`)
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+## Content files
 
-## Development Server
+- `src/content/news.json`
+- `src/content/gallery.json`
+- `src/content/navigation.json`
+- `src/content/program.json`
 
-Start the development server on http://localhost:3000
+## Assets
 
-```bash
-npm run dev
-```
+- Images: `public/images/`
+- News images (legacy-compatible URLs): `public/news/`
+- Fonts: `public/fonts/`
 
-## Production
+## Commands
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+- `yarn dev` - start local development server
+- `yarn check` - run Astro type/content checks
+- `yarn build` - build production output
+- `yarn preview` - preview production build

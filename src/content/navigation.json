@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Info",
+    "path": "/"
+  },
+  {
+    "title": "Galerie",
+    "path": "/gallery"
+  }
+]

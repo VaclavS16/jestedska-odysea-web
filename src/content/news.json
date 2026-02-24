@@ -1,0 +1,29 @@
+[
+  {
+    "title": "2026: Zimní Ještědská Odysea",
+    "description": "Čas a prostor tvoří naší realitu a existence má svá neměnná pravidla! A tak na přelomu zimy a jara proběhne další blízké setkání všech druhů:\n2026: Zimní Ještědská Odysea – opět v našem oblíbeném Argonautu!",
+    "date": "2026-03-20",
+    "location": "Argonaut",
+    "locationUrl": "https://maps.app.goo.gl/mW7v3VngHYx4gN7p6",
+    "image": "2026winter.webp",
+    "imagePosition": "top",
+    "link": "https://www.facebook.com/events/1989100561855572"
+  },
+  {
+    "title": "2026 Ještědská Odysea",
+    "description": "Čas a prostor tvoří naší realitu a existence má svá neměnná pravidla... V roce 2026 se opět uvidíme ve Sportovním areálu Vesec na patnáctém ročníku hudebního festivalu Ještědská odysea — tentokrát ale až druhou červnovou sobotu, tj. 13.6.2026",
+    "date": "2026-06-13",
+    "location": "Sportovní areál Vesec, Liberec",
+    "locationUrl": "https://maps.app.goo.gl/y8zgiSpKRDCfQs9x6",
+    "image": "jo2026.webp",
+    "imagePosition": "top",
+    "link": "https://www.facebook.com/events/1589227855106896/"
+  },
+  {
+    "title": "Předprodej vstupenek",
+    "image": "presale2026.webp",
+    "description": "Předprodej zahájen. Kupte si vstupenku dopředu, ušetříte nějakou tu korunu na drinky a čas při příchodu na akci!",
+    "link": "https://www.book-tickets.cz/?page=bookticket&event=164",
+    "icon": "ticket"
+  }
+]
