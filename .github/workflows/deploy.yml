@@ -2,10 +2,10 @@ name: Deploy Astro to FTP
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 concurrency:
-  group: deploy-main
+  group: deploy-master
   cancel-in-progress: true
 
 jobs:
