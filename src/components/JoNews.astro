@@ -7,9 +7,9 @@ const items = news as JoNewsItem[];
 ---
 
 {
-  items.map((item) => (
-    <div class="mb-4">
-      <JoNewsItemComponent item={item} />
-    </div>
-  ))
-}
+  items.map((item, index) => (
+  <div class="mb-4">
+      <JoNewsItemComponent item={item} lazy={index > 1} />
+  </div>
+    ))
+  }

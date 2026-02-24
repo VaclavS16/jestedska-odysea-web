@@ -7,9 +7,10 @@ import type { JoNewsItem as NewsItemType } from "../types/content";
 
 interface Props {
   item: NewsItemType;
+  lazy: boolean;
 }
 
-const { item } = Astro.props;
+const { item, lazy } = Astro.props;
 
 const formattedDate = item.date
   ? `${new Date(item.date).getDate()}|${new Date(item.date).getMonth() + 1}|${new Date(item.date).getFullYear()}`
@@ -36,8 +37,13 @@ const newsImage = resolveNewsImage(item.image);
        class="group">
         <div class="overflow-hidden relative">
           {newsImage && (
-                  <Image src={newsImage} alt="Cover image pro zprávu"
-                         class={`jo-news-item__image group-hover:brightness-125 ${imagePositionClass}`} />
+                  <Image
+                          src={newsImage}
+                          alt={item.title}
+                          class={`jo-news-item__image group-hover:brightness-125 ${imagePositionClass}`}
+                          loading={lazy ? "lazy" : "eager"}
+                          fetchpriority={lazy ? "low" : "high"}
+                  />
           )}
             <h2 class={`jo-news-item__title ${newsImage ? "absolute" : ""}`}>{item.title}</h2>
         </div>

@@ -12,7 +12,7 @@ const { class: className = "" } = Astro.props;
 </div>
 
 <script>
-  const typeText = (root) => {
+  const typeText = (root: Element) => {
     if (!(root instanceof HTMLElement) || root.dataset.typedReady === "true") return;
 
     const source = root.querySelector("[data-typed-source]");
@@ -36,7 +36,7 @@ const { class: className = "" } = Astro.props;
     }, 700);
   };
 
-  document.querySelectorAll("[data-typed-root]").forEach((root) => {
+  document.querySelectorAll("[data-typed-root]").forEach((root: Element) => {
     typeText(root);
   });
 </script>
